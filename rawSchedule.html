@@ -1531,7 +1531,8 @@ html, body {
         </div>
     </div>
 </div>
-<script async="true">
+<script defer="true">
+window.onload = function() {
     const events = {
     "openingCeremony": {
         "title": "Opening Ceremony",
@@ -1829,7 +1830,6 @@ function closePopup() {
     popup.classList.toggle("open");
 }
 var popup;
-window.onload = () => {
     popup = document.getElementById("yes-popup");
     randomizePanelists();
 }
