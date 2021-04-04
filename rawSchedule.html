@@ -287,45 +287,6 @@
     }
 </script>
 <style>
-    @font-face {
-        font-family: 'Squound';
-
-        src: url('../fonts/Squound-Regular.otf');
-
-        font-display: swap;
-        font-style: normal;
-        font-weight: 500;
-    }
-
-    @font-face {
-        font-family: 'LouisGeorgeCafe';
-
-        src: url('../fonts/LouisGeorgeCafeLight.ttf');
-
-        font-display: swap;
-        font-style: normal;
-        font-weight: 200;
-    }
-
-    @font-face {
-        font-family: 'LouisGeorgeCafe';
-
-        src: url('../fonts/LouisGeorgeCafe.ttf');
-
-        font-display: swap;
-        font-style: normal;
-        font-weight: 300;
-    }
-
-    @font-face {
-        font-family: 'LouisGeorgeCafe';
-
-        src: url('../fonts/LouisGeorgeCafeBold.ttf');
-
-        font-display: swap;
-        font-style: normal;
-        font-weight: 500;
-    }
 
     :root {
         --orange: 232, 133, 97;
@@ -410,6 +371,10 @@
 
     .yes-button-right {
         margin-left: auto;
+    }
+
+    .yes-branding > img {
+        max-width: none;
     }
 
     .yes-title-header {
@@ -567,6 +532,7 @@
     }
 
     .yes-time-orange {
+        max-width: none;
         width: 694px;
         height: 63px;
         position: absolute;
@@ -575,6 +541,7 @@
     }
 
     .yes-time-blue {
+        max-width: none;
         width: 1060px;
         height: 63px;
         position: absolute;
@@ -583,6 +550,7 @@
     }
 
     .yes-time-yellow {
+        max-width: none;
         width: 694px;
         height: 63px;
         position: absolute;
@@ -631,6 +599,8 @@
         position: absolute;
         top: -30px;
         left: 30px;
+        margin: 0;
+        color: black;
     }
 
 
@@ -665,7 +635,7 @@
         line-height: 20px;
         text-align: left;
         color: black;
-        font-weight: 300;
+        font-weight: 400;
         margin: 0;
         margin-top: 30px;
 
@@ -723,7 +693,7 @@
         max-height: var(--panelist-font-size);
         text-align: left;
         color: black;
-        font-weight: 300;
+        font-weight: 400;
         margin-top: 30px;
         margin-bottom: 20px;
         width: 100%;
@@ -771,7 +741,7 @@
         line-height: var(--panelist-font-size);
         text-align: left;
         color: black;
-        font-weight: 500;
+        font-weight: 600;
         margin: 0;
         margin-top: 10px;
         width: 100%;
@@ -786,7 +756,7 @@
         background-color: #514744;
         height: auto;
         border-radius: 50%;
-        font-weight: 500;
+        font-weight: 600;
         margin: 0;
         display: block;
         margin-top: 10px;
@@ -799,7 +769,7 @@
         line-height: var(--panelist-sub-heading-font-size);
         text-align: left;
         color: black;
-        font-weight: 500;
+        font-weight: 600;
         margin: 0;
         margin-top: 5px;
         width: 100%;
@@ -933,9 +903,10 @@
         }
 
         .yes-branding > img {
-            display: block;
+            display: block!important;
             margin: 0 auto;
             margin-bottom: 30px;
+            max-width: 100%!important;
         }
 
         .yes-header {
