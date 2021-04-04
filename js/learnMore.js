@@ -246,7 +246,7 @@ function populateCard(card) {
         const name = document.getElementById(card + "-panelist-" + i + "-name");
         console.log(picture, companyName, name);
         console.log("entry", shuffledArray[i]);
-        const url = shuffledArray[i].picture.length > 0 ? shuffledArray[i].picture : "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30faaf2d3e8388959e44_default.png";
+        const url = shuffledArray[i].picture.length > 0 ? shuffledArray[i].picture : "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a4120a7e782f0d23512ec_default.png";
         console.log("url", url);
 
         picture.src = url;
