@@ -9,7 +9,7 @@
 }
 
 @font-face {
-    font-family: 'LouisGeorgeCafe';
+    font-family: 'Louis George Cafe';
 
     src: url('../fonts/LouisGeorgeCafeLight.ttf');
 
@@ -19,7 +19,7 @@
 }
 
 @font-face {
-    font-family: 'LouisGeorgeCafe';
+    font-family: 'Louis George Cafe';
 
     src: url('../fonts/LouisGeorgeCafe.ttf');
 
@@ -29,7 +29,7 @@
 }
 
 @font-face {
-    font-family: 'LouisGeorgeCafe';
+    font-family: 'Louis George Cafe';
 
     src: url('../fonts/LouisGeorgeCafeBold.ttf');
 
@@ -42,7 +42,7 @@
     --orange: 232, 133, 97;
     --blue: 108, 127, 191;
     --yellow: 250, 230, 5;
-    --base-font-family: "LouisGeorgeCafe", "Helvetica", "Arial", sans-serif;
+    --base-font-family: "Louis George Cafe", "Helvetica", "Arial", sans-serif;
     --header-font-family: "Squound", "LouisGeorgeCafe", "Helvectica", "Arial", sans-serif;
     --base-font-size: 18px;
     --header-font-size: 50px;
@@ -123,10 +123,14 @@ html, body {
     margin-left: auto;
 }
 
+.yes-branding > img {
+    max-width: none;
+}
+
 .yes-title-header {
     display: flex;
     width: 100%;
-    background-image: url("../images/black-background.svg");
+    background-image: url("https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a2b46ee6c2788420732b3_black-background.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -176,7 +180,7 @@ html, body {
 
 .yes-orange-background {
     width: 100%;
-    background-image: url("../images/orange-background.svg");
+    background-image: url("https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a2b47e5289d95eccd4b26_orange-background.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom;
@@ -188,7 +192,7 @@ html, body {
 
 .yes-second-orange-background {
     width: 100%;
-    background-image: url("../images/second-orange-background.svg");
+    background-image: url("https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a2b48c015310c7fc9a507_second-orange-background.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom;
@@ -201,7 +205,7 @@ html, body {
 
 .yes-blue-background {
     width: 100%;
-    background-image: url("../images/blue-background.svg");
+    background-image: url("https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a2b47f049165d6d3007bf_blue-background.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom;
@@ -214,7 +218,7 @@ html, body {
 
 .yes-yellow-background {
     width: 100%;
-    background-image: url("../images/yellow-background.svg");
+    background-image: url("https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a2b48af95c2499e2708a7_yellow-background.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom;
@@ -278,6 +282,7 @@ html, body {
 }
 
 .yes-time-orange {
+    max-width: none;
     width: 694px;
     height: 63px;
     position: absolute;
@@ -286,6 +291,7 @@ html, body {
 }
 
 .yes-time-blue {
+    max-width: none;
     width: 1060px;
     height: 63px;
     position: absolute;
@@ -294,6 +300,7 @@ html, body {
 }
 
 .yes-time-yellow {
+    max-width: none;
     width: 694px;
     height: 63px;
     position: absolute;
@@ -320,7 +327,7 @@ html, body {
 }
 
 .yes-event-cards > .yes-event-card-container > .yes-event-card {
-    background-image: url("../images/card.png");
+    background-image: url("https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a2b47c015313476c9a506_card.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 30px;
@@ -340,8 +347,10 @@ html, body {
     line-height: var(--card-sub-heading-font-size);
     max-height: var(--card-sub-heading-font-size);
     position: absolute;
-    top: -30px;
+    top: -5px;
     left: 30px;
+    margin: 0;
+    color: black;
 }
 
 
@@ -376,7 +385,7 @@ html, body {
     line-height: 20px;
     text-align: left;
     color: black;
-    font-weight: 300;
+    font-weight: 400;
     margin: 0;
     margin-top: 30px;
 
@@ -398,7 +407,7 @@ html, body {
 }
 
 .yes-orange-highlight {
-    background-image: url("../images/orange-tape.svg");
+    background-image: url("https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a2b471e21c77a64ef73e2_orange-tape.svg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5px;
@@ -408,7 +417,7 @@ html, body {
 }
 
 .yes-blue-highlight {
-    background-image: url("../images/blue-tape.svg");
+    background-image: url("https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a2b46e139de7a966fc4f0_blue-tape.svg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5px;
@@ -418,7 +427,7 @@ html, body {
 }
 
 .yes-yellow-highlight {
-    background-image: url("../images/yellow-tape.svg");
+    background-image: url("https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a2b489a08b6565d525f1b_yellow-tape.svg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5px;
@@ -434,7 +443,7 @@ html, body {
     max-height: var(--panelist-font-size);
     text-align: left;
     color: black;
-    font-weight: 300;
+    font-weight: 400;
     margin-top: 30px;
     margin-bottom: 20px;
     width: 100%;
@@ -482,7 +491,7 @@ html, body {
     line-height: var(--panelist-font-size);
     text-align: left;
     color: black;
-    font-weight: 500;
+    font-weight: 600;
     margin: 0;
     margin-top: 10px;
     width: 100%;
@@ -497,7 +506,7 @@ html, body {
     background-color: #514744;
     height: auto;
     border-radius: 50%;
-    font-weight: 500;
+    font-weight: 600;
     margin: 0;
     display: block;
     margin-top: 10px;
@@ -510,7 +519,7 @@ html, body {
     line-height: var(--panelist-sub-heading-font-size);
     text-align: left;
     color: black;
-    font-weight: 500;
+    font-weight: 600;
     margin: 0;
     margin-top: 5px;
     width: 100%;
@@ -518,7 +527,7 @@ html, body {
 
 .yes-invited {
     background-color: black;
-    background-image: url("../images/invited.png");
+    background-image: url("https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a2b478eb9426d3165d61c_invited.png");
     background-attachment: fixed;
     background-position-y: bottom;
     background-position-x: center;
@@ -644,9 +653,10 @@ html, body {
     }
 
     .yes-branding > img {
-        display: block;
+        display: block!important;
         margin: 0 auto;
         margin-bottom: 30px;
+        max-width: 100%!important;
     }
 
     .yes-header {

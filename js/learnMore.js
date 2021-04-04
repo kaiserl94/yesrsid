@@ -52,7 +52,7 @@ const events = {
         "description": "Expand your knowledge of universal and accessible design by attending this keynote presentation hosted by Karen Braitmayer, founding principle of Studio Pacifica, and William Zver, Accessibility Associate at LRI Engineering Inc.",
     },
     "affordableHousing": {
-        "subtitle": "Keynote Presentation",
+        "subtitle": "Table Talk",
         "title": "Affordable Housing",
         "description": "Let’s talk about affordable housing, how economic realities impact how we design, and the process behind bringing projects to life! Moderated by Kfir Gluzberg, this keynote includes presentations from two members of the official jury panel for the International Architecture Competition: Toronto Affordable Housing Challenge, Fotini Pitoglou and Daniel Wu.",
     },
@@ -72,7 +72,7 @@ const speakers = {
         "site": "https://tomislav-topic.com",
         "instagram": "@topic_tomislav",
         "linkedin": "https://www.linkedin.com/in/tomislav-topic-a5407481/",
-        "picture": "topic.png"
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fd9a08b6c00c527797_topic.png"
     },
     "webb": {
         "name": "Alan Webb (He/Him)",
@@ -80,20 +80,20 @@ const speakers = {
         "bio": "Alan Webb is a licensed architect as well as a practising artist, art consultant and educator. As co-director of the interdisciplinary studio LeuWebb Projects, he works at a variety of scales and across a range of media. LeuWebb’s collaborative practice draws on art and architecture, seeking to engage people with both the tangible and the ephemeral by creating art that stimulates curiosity, suggests play, and inspires its participants. Webb has lived and worked in Montreal, New York, Rome and Helsinki, and currently resides in Toronto.",
         "email": "alan.webb@ryerson.ca",
         "instagram": "@leuwebb",
-        "picture": "webb.png"
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fd1e205c9dfba84434_webb.png"
     },
     "bergeron": {
         "name": "Annie Bergeron (She/Her)",
         "company": "Gensler",
         "bio": "Annie Bergeron’s work on technology, media, and financial services companies, has put her on the cutting edge of creative workplaces. As a Gensler Design Principal with over 25 years’ experience, she develops inspiring thought leadership content, and guides teams in the creation of exceptional design solutions for projects of all sizes. A sought-after industry speaker and podcast host, she has been featured in interviews on national media and publications.",
         "linkedin": "https://www.linkedin.com/in/annie-bergeron-38a63968/",
-        "picture": "bergeron.png"
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30faccaf0d6ba0f63b17_bergeron.png"
     },
     "mekhayech": {
         "name": "Anwar Mekhayech (He/Him)",
         "company": "Design Agency",
         "bio": "Anwar Mekhayech is one of the co-founders of DesignAgency and brings an international perspective to the design of projects that he works on. Working primarily overseas, his thorough understanding of the relationship between brands and their design has given him opportunities worldwide in developing branded environments for renowned clients such as NeueHouse, Momofuku restaurants, Generator and Pendry Hotels. Anwar graduated with honours from the University of Western Ontario with a degree in mechanical engineering design. His eclectic sense of design, studies in engineering and interest in travel and culture all contribute to his passion for design and how it shapes the world we live in.",
-        "picture": "mekhayech.png"
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fc4f1ab8123c6a2a0f_mekhayech.png"
     },
     "dowling": {
         "name": "Catherine Dowling (She/Her)",
@@ -101,7 +101,7 @@ const speakers = {
         "bio": "Catherine Dowling completed a Master of Education from OISE at the University of Toronto following degrees in Architecture and Environmental Studies at the University of Waterloo, a degree in Interior Design at the University of Manitoba and study at Arcosanti in Arizona. As a practitioner and academic her teaching, research and practice is founded on design and construction excellence, design thinking, with an emphasis on the process of making. Catherine’s academic research explores the relationship between design and learning, the realm of the handmade, indigenous material culture, and the impact of kinesthetic creation on the processes of critical thinking, education and cultural design literacy.",
         "email": "cdowling@ryerson.ca",
         "linkedin": "https://www.linkedin.com/in/catherine-dowling-16855419/",
-        "picture": "dowling.png"
+        "picture": ""
     },
     "cornelius": {
         "name": "Chris Cornelius (He/Him)",
@@ -109,14 +109,14 @@ const speakers = {
         "bio": "Chris Cornelius is a citizen of the Oneida Nation of Wisconsin and an Associate Professor of Architecture at the University of Wisconsin-Milwaukee. He is the founding principal of studio:indigenous, a design practice serving Indigenous clients. Cornelius was a collaborating designer with Antoine Predock at the Indian Community School of Milwaukee. Chris is the recipient of numerous awards and honors. Including the inaugural Miller Prize from Exhibit Columbus, a 2018 Architect’s Newspaper Best of Design Award, and an Artist residency from the National Museum of the American Indian. Chris has been exhibited widely including the 2018 Venice Architecture Biennale. During the Spring 2021 semester Cornelius is the Louis I. Kahn Visiting Assistant Professor at Yale University.",
         "email": "chris@studioindigenous.com",
         "instagram": "@christcornelius",
-        "picture": "cornelius.png"
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fb0b7cda880672da83_cornelius.png"
     },
     "heidenheim": {
         "name": "Laura Heidenheim (She/Her)",
         "company": "Ryerson University",
         "bio": "Laura Heidenheim is a settler of mixed European and German Jewish ancestry, born and raised in London Ontario the traditional territory of the Anishinabek, Haudenosaunee and Delaware Peoples. For the past four years she has been learning from and working with MMIWGT2S+ Family Members, engaging in grass-roots projects. Laura is one of the co-creators of Shades of Our Sisters, an exhibit which exists with the purpose of honouring MMIWGT2S+ and giving Families space to celebrate the lives of their loved ones. She is currently the Manager of Saagajiwe, FCAD's Interdisciplinary Centre for Indigenous Research and Creation.",
         "email": "laura.heidenheim@ryerson.ca",
-        "picture": "heidenheim.png"
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fc8eb942b86565eaf3_heidenheim.png"
     },
     "abubakare": {
         "name": "Farida Abu-Bakare (She/Her)",
@@ -124,23 +124,25 @@ const speakers = {
         "bio": "Farida is a registered architect in Ontario and holds a Master of Architecture from Ryerson University and a Bachelor of Architectural Studies from Carleton University. She is a Project Director at the award winning architectural and design firm; Adjaye Associates. Prior to, she lived and worked throughout Canada and the United States with the global design, architecture, engineering, and planning firm HOK to build an extensive portfolio including workplace, corporate headquarters, healthcare, higher education, aviation, justice, science, and advanced technology projects.",
         "instagram": "@fabsavoirfaire",
         "linkedin": "https://www.linkedin.com/in/faridaabu-bakare/",
-        "picture": "abubakare.png"
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30faaf95c24a862727f4_abubakare.png"
     },
     "cleckley": {
         "name": "Elgin Cleckley",
         "company": "",
         "bio": "",
-        "picture": "cleckley.png"
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fa23801e5b248bd993_cleckley.png"
     },
     "abuzeinah": {
         "name": "Juwana Abu-Zeinah",
         "company": "",
         "bio": "",
+        "picture": ""
     },
     "berman": {
         "name": "Ila Berman",
         "company": "",
         "bio": "",
+        "picture": ""
     },
     "yabu": {
         "name": "George Yabu (He/Him)",
@@ -149,7 +151,7 @@ const speakers = {
         "instagram": "@yabupushelberg",
         "email": "info@yabupushelberg.com",
         "careers": "careers@yabupushelberg.com",
-        "picture": "yabu.png"
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fdaf0a42efe12a820d_yabu.png"
     },
     "pushelberg": {
         "name": "Glen PushelBurg (He/Him)",
@@ -158,7 +160,7 @@ const speakers = {
         "instagram": "@yabupushelberg",
         "email": "info@yabupushelberg.com",
         "careers": "careers@yabupushelberg.com",
-        "picture": "pushelberg.png"
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fd9386fc7692b103eb_pushelberg.png"
     },
     "munge": {
         "name": "Alessandro Munge (He/Him)",
@@ -167,19 +169,19 @@ const speakers = {
         "instagram": "@studiomunge",
         "email": "hello@studiomunge.com",
         "site": "https://www.studiomunge.com/",
-        "picture": "munge.png"
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fcf6487844b04b57a3_munge.png"
     },
     "pavka": {
         "name": "Evan Pavka (He/Him)",
         "company": "Ryerson University",
         "bio": "Evan Pavka is a writer, editor and educator based in Tkaronto/Toronto. Frequently contributing to platforms such as ArchDaily, -SITE, The Architect’s Newspaper and Azure, his writing has also been featured in edited volumes by Princeton University, the University of Virginia and KTH Royal Institute of Technology in Stockholm. He holds a Master of Architecture in Architectural History and Theory from McGill University.",
-        "picture": "pavka.png"
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fcf04916ced130136f_pavka.png"
     },
     "park": {
         "name": "Nam-Kyu Park (She/Her)",
         "company": "University of Florida",
         "bio": "Nam-Kyu Park is an Associate Professor in the Department of Interior Design at the College of Design, Construction and Planning in the University of Florida. She is a LEED accredited professional and NCIDQ certified interior designer. Also, she possesses Evidence-based Design accreditation (EDAC), and a LC-Lighting Certificate. Her research focuses on optimizing well-being, health, and human behavior through the design of the built environment. Her principle areas of research address the impact of lighting in interior environments and environmental design for special needs populations. She also examines cultural dimensions of the built environment defining environmental and social sustainability. Currently she is serving as an Associate Editor of the Journal of Interior Design.",
-        "picture": "park.png"
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fc0b7cda6ebe72da86_park.png"
     },
 
 }
@@ -242,8 +244,9 @@ function populateCard(card) {
         const picture = document.getElementById(card + "-panelist-" + i + "-picture");
         const companyName = document.getElementById(card + "-panelist-" + i + "-company");
         const name = document.getElementById(card + "-panelist-" + i + "-name");
-    
-        picture.src = "./images/pictures/" + shuffledArray[i].picture;
+        const url = shuffledArray[i].picture.length > 0 ? shuffledArray[i].picture : "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30faaf2d3e8388959e44_default.png";
+
+        picture.src = url;
         companyName.innerText = shuffledArray[i].company;
         name.innerText = shuffledArray[i].name;
     }
