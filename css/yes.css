@@ -1016,6 +1016,10 @@ html, body {
     transition: var(--transition);
 }
 
+.yes-popup-close > svg {
+    margin: 6px 0;
+}
+
 .yes-popup-close:hover {
     background-color: black;
 }
