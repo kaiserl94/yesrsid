@@ -1536,10 +1536,6 @@ html, body {
     window.addEventListener("load", pageFullyLoaded, false);
 
     function theDomHasLoaded(e) {
-        console.log("dom loaded");
-        var popup;
-        popup = document.getElementById("yes-popup");
-        randomizePanelists();
     }
 
     function pageFullyLoaded(e) {
@@ -1847,4 +1843,7 @@ function closePopup() {
 }
 
 console.log("log me everytime");
+var popup;
+popup = document.getElementById("yes-popup");
+randomizePanelists();
 </script>
