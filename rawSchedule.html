@@ -1532,8 +1532,23 @@ html, body {
     </div>
 </div>
 <script>
-window.onload = function() {
-    console.log("window loaded");
+    document.addEventListener("DOMContentLoaded", theDomHasLoaded, false);
+    window.addEventListener("load", pageFullyLoaded, false);
+
+    function theDomHasLoaded(e) {
+        console.log("dom loaded");
+        var popup;
+        popup = document.getElementById("yes-popup");
+        randomizePanelists();
+    }
+
+    function pageFullyLoaded(e) {
+        console.log("window loaded");
+        var popup;
+        popup = document.getElementById("yes-popup");
+        randomizePanelists();
+    }
+
     const events = {
     "openingCeremony": {
         "title": "Opening Ceremony",
@@ -1830,8 +1845,5 @@ function closePopup() {
     }
     popup.classList.toggle("open");
 }
-var popup;
-    popup = document.getElementById("yes-popup");
-    randomizePanelists();
-}
+
 </script>
