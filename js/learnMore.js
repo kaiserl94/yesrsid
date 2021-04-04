@@ -264,6 +264,9 @@ function showPopup(popupInfo) {
     const info = eventMap.get(popupInfo);
     const eventInfo = events[popupInfo];
 
+    if (!popup) {
+        popup = document.getElementById("yes-popup");
+    }
     popup.classList.toggle("open");
 
     if (eventInfo.subtitle) {
@@ -284,6 +287,9 @@ function showPopup(popupInfo) {
 }
 
 function closePopup() {
+    if (!popup) {
+        popup = document.getElementById("yes-popup");
+    }
     popup.classList.toggle("open");
 }
 var popup;
