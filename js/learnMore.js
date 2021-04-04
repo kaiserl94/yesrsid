@@ -244,7 +244,10 @@ function populateCard(card) {
         const picture = document.getElementById(card + "-panelist-" + i + "-picture");
         const companyName = document.getElementById(card + "-panelist-" + i + "-company");
         const name = document.getElementById(card + "-panelist-" + i + "-name");
+        console.log(picture, companyName, name);
+        console.log("entry", shuffledArray[i]);
         const url = shuffledArray[i].picture.length > 0 ? shuffledArray[i].picture : "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30faaf2d3e8388959e44_default.png";
+        console.log("url", url);
 
         picture.src = url;
         companyName.innerText = shuffledArray[i].company;
