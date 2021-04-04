@@ -264,7 +264,6 @@ function showPopup(popupInfo) {
     const info = eventMap.get(popupInfo);
     const eventInfo = events[popupInfo];
 
-    const popup = document.getElementById("yes-popup");
     popup.classList.toggle("open");
 
     if (eventInfo.subtitle) {
@@ -284,6 +283,11 @@ function showPopup(popupInfo) {
     }
 }
 
+function closePopup() {
+    popup.classList.toggle("open");
+}
+var popup;
 window.onload = () => {
+    popup = document.getElementById("yes-popup");
     randomizePanelists();
 }
