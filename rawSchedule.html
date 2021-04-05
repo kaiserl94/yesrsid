@@ -1532,16 +1532,6 @@ html, body {
     </div>
 </div>
 <script>
-    document.addEventListener("DOMContentLoaded", theDomHasLoaded, false);
-    window.addEventListener("load", pageFullyLoaded, false);
-
-    function theDomHasLoaded(e) {
-    }
-
-    function pageFullyLoaded(e) {
-        console.log("window loaded");
-    }
-
     const events = {
     "openingCeremony": {
         "title": "Opening Ceremony",
@@ -1838,8 +1828,6 @@ function closePopup() {
     }
     popup.classList.toggle("open");
 }
-
-console.log("log me everytime");
 var popup;
 popup = document.getElementById("yes-popup");
 randomizePanelists();

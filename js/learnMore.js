@@ -296,7 +296,5 @@ function closePopup() {
     popup.classList.toggle("open");
 }
 var popup;
-window.onload = function() {
-    popup = document.getElementById("yes-popup");
-    randomizePanelists();
-}
+popup = document.getElementById("yes-popup");
+randomizePanelists();
