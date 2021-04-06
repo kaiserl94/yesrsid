@@ -70,7 +70,7 @@ const speakers = {
         "bio": "The artist Tomislav Topic, born in Hannover in 1985 and living in Berlin, has created a stylistically unique and unmistakable oeuvre over the course of his career. As part of Quintessenz and as a solo artist, he has been able to realise numerous installations and murals in public spaces worldwide. Tomislav Topic’s murals go beyond the boundaries of the genre of painting and prove that his abstract non-representational style works exceptionally well both in small gallery format and on monumental walls. Based on his studies at the University of applied science and art in Hildesheim, he has both a background in the academic art world and in urban art. He confidently formulates his own artistic point of view, which seeks to unite and transcend these classical categories and sees his artistic work primarily as work on our environment. He has been a lecturer at the university in Hildesheim and other educational institutions. Topic is known for his colourful, site-specific art installations, in which he knows how to reduce his work to the actual essence of art itself: colour and form. These are elevated to the sole and primary content of his art. His abstract works and the fundamental focus on colour and form allow him to create universally understandable installations, that enable the viewer to experience art in a true and direct way. In Topic’s work, the uplifting power of beauty and the logic of science enter into a symbiosis, which challenges us to perceive the environment with expanded senses. Whether painting or installation, his art has the ability to resonate worldwide as an internationally valid form of expression and also to unite people of very different cultures in art.",
         "email": "hello@tomislav-topic.com",
         "site": "https://tomislav-topic.com",
-        "instagram": "@topic_tomislav",
+        "instagram": "topic_tomislav",
         "linkedin": "https://www.linkedin.com/in/tomislav-topic-a5407481/",
         "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fd9a08b6c00c527797_topic.png"
     },
@@ -79,7 +79,7 @@ const speakers = {
         "company": "LeuWebb Projects",
         "bio": "Alan Webb is a licensed architect as well as a practising artist, art consultant and educator. As co-director of the interdisciplinary studio LeuWebb Projects, he works at a variety of scales and across a range of media. LeuWebb’s collaborative practice draws on art and architecture, seeking to engage people with both the tangible and the ephemeral by creating art that stimulates curiosity, suggests play, and inspires its participants. Webb has lived and worked in Montreal, New York, Rome and Helsinki, and currently resides in Toronto.",
         "email": "alan.webb@ryerson.ca",
-        "instagram": "@leuwebb",
+        "instagram": "leuwebb",
         "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fd1e205c9dfba84434_webb.png"
     },
     "bergeron": {
@@ -108,7 +108,7 @@ const speakers = {
         "company": "studio: indigenous",
         "bio": "Chris Cornelius is a citizen of the Oneida Nation of Wisconsin and an Associate Professor of Architecture at the University of Wisconsin-Milwaukee. He is the founding principal of studio:indigenous, a design practice serving Indigenous clients. Cornelius was a collaborating designer with Antoine Predock at the Indian Community School of Milwaukee. Chris is the recipient of numerous awards and honors. Including the inaugural Miller Prize from Exhibit Columbus, a 2018 Architect’s Newspaper Best of Design Award, and an Artist residency from the National Museum of the American Indian. Chris has been exhibited widely including the 2018 Venice Architecture Biennale. During the Spring 2021 semester Cornelius is the Louis I. Kahn Visiting Assistant Professor at Yale University.",
         "email": "chris@studioindigenous.com",
-        "instagram": "@christcornelius",
+        "instagram": "christcornelius",
         "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fb0b7cda880672da83_cornelius.png"
     },
     "heidenheim": {
@@ -122,13 +122,13 @@ const speakers = {
         "name": "Farida Abu-Bakare (She/Her)",
         "company": "Adjaye Associates",
         "bio": "Farida is a registered architect in Ontario and holds a Master of Architecture from Ryerson University and a Bachelor of Architectural Studies from Carleton University. She is a Project Director at the award winning architectural and design firm; Adjaye Associates. Prior to, she lived and worked throughout Canada and the United States with the global design, architecture, engineering, and planning firm HOK to build an extensive portfolio including workplace, corporate headquarters, healthcare, higher education, aviation, justice, science, and advanced technology projects.",
-        "instagram": "@fabsavoirfaire",
+        "instagram": "fabsavoirfaire",
         "linkedin": "https://www.linkedin.com/in/faridaabu-bakare/",
         "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30faaf95c24a862727f4_abubakare.png"
     },
     "cleckley": {
         "name": "Elgin Cleckley",
-        "company": "",
+        "company": "University of Virginia",
         "bio": "",
         "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fa23801e5b248bd993_cleckley.png"
     },
@@ -148,7 +148,7 @@ const speakers = {
         "name": "George Yabu (He/Him)",
         "company": "Yabu Pushelberg",
         "bio": "Yabu Pushelberg is a holistic design agency dedicated to crafting superlative experience and brand identity through integrated ideation, design and curation. Unprecedented thoughtfulness defining 40 years of work has asserted founders George Yabu and Glenn Pushelberg as celebrated leaders across design disciplines. Having evolved from a studio founded on interior design, Yabu Pushelberg’s offices in Toronto and New York now specialize in sensibilities spanning architecture, landscapes, interiors, lighting, furniture, objects, textiles, branding and graphics.  This comprehensive approach coupled with the studio’s narrative-based design trademark has ushered Yabu Pushelberg into a full-fledged creative agency redefining modern luxury around the world.",
-        "instagram": "@yabupushelberg",
+        "instagram": "yabupushelberg",
         "email": "info@yabupushelberg.com",
         "careers": "careers@yabupushelberg.com",
         "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fdaf0a42efe12a820d_yabu.png"
@@ -157,7 +157,7 @@ const speakers = {
         "name": "Glen PushelBurg (He/Him)",
         "company": "Yabu Pushelberg",
         "bio": "Yabu Pushelberg is a holistic design agency dedicated to crafting superlative experience and brand identity through integrated ideation, design and curation. Unprecedented thoughtfulness defining 40 years of work has asserted founders George Yabu and Glenn Pushelberg as celebrated leaders across design disciplines. Having evolved from a studio founded on interior design, Yabu Pushelberg’s offices in Toronto and New York now specialize in sensibilities spanning architecture, landscapes, interiors, lighting, furniture, objects, textiles, branding and graphics.  This comprehensive approach coupled with the studio’s narrative-based design trademark has ushered Yabu Pushelberg into a full-fledged creative agency redefining modern luxury around the world.",
-        "instagram": "@yabupushelberg",
+        "instagram": "yabupushelberg",
         "email": "info@yabupushelberg.com",
         "careers": "careers@yabupushelberg.com",
         "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fd9386fc7692b103eb_pushelberg.png"
@@ -166,7 +166,7 @@ const speakers = {
         "name": "Alessandro Munge (He/Him)",
         "company": "Studio Munge",
         "bio": "Born into a world of design, Alessandro Munge quickly transcended his teenage sketches to become one of North America’s most sought-after designers. With an innovative point of view earning him Contract Magazine’s Designer of the Year Award and Ryerson Alumni Achievement Award, Alessandro approaches every project with a deep understanding of practicalities, artistic expression, and human connectivity. Strengthening his ties to top tier hospitality brands and clients, Alessandro continues to establish himself as a multidisciplinary thought leader through design architecture, landscaping and product design.",
-        "instagram": "@studiomunge",
+        "instagram": "studiomunge",
         "email": "hello@studiomunge.com",
         "site": "https://www.studiomunge.com/",
         "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fcf6487844b04b57a3_munge.png"
@@ -183,8 +183,166 @@ const speakers = {
         "bio": "Nam-Kyu Park is an Associate Professor in the Department of Interior Design at the College of Design, Construction and Planning in the University of Florida. She is a LEED accredited professional and NCIDQ certified interior designer. Also, she possesses Evidence-based Design accreditation (EDAC), and a LC-Lighting Certificate. Her research focuses on optimizing well-being, health, and human behavior through the design of the built environment. Her principle areas of research address the impact of lighting in interior environments and environmental design for special needs populations. She also examines cultural dimensions of the built environment defining environmental and social sustainability. Currently she is serving as an Associate Editor of the Journal of Interior Design.",
         "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fc0b7cda6ebe72da86_park.png"
     },
-
+    "weinthal": {
+        "name": "Lois Weinthal",
+        "company": "Ryerson University",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fdfb08b497247552f6_weinthal.png"
+    },
+    "falzon": {
+        "name": "Charles Falzon",
+        "company": "Ryerson University",
+        "picture": ""
+    },
+    "kenny": {
+        "name": "Ena Kenny",
+        "company": "Stantec",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fcf049165b6e30136e_kenny.png"
+    },
+    "yan": {
+        "name": "Amy Yan (She/Her)",
+        "company": "Ryerson University",
+        "bio": "Amy Yan is a 4th year student at the Ryerson School of Interior Design. During her time at RSID, she has worked on multiple cross-disciplinary research projects that have been showcased at the Interior Design Show and Come Up to My Room exhibitions in Toronto. She is interested in exploring the intersections between design and storytelling with her work, and in finding new ways to be able to convey narratives that can be experienced visually, emotionally and at all scales.",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fec015317e30c9bf7f_yan.png",
+        "linkedin": "https://www.linkedin.com/in/amy-j-yan/",
+        "instagram": "aypproductions",
+    },
+    "labutte": {
+        "name": "Lauren LaButte (She/Her)",
+        "company": "Ryerson University",
+        "bio": "Lauren is a fourth year interior design student at Ryerson School of Interior Design with a background in psychology. She specializes in 3D architectural visualization, rendering for virtual reality experiences and her go-to software pairing is Sketchup and V-Ray. She is currently working her internship at a small residential design firm, is a research assistant for Ryerson, and is one of the Site Executives on the Year End Show Committee while finishing her final year of her bachelor’s in interior design.",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fc771a1ab6bbb08268_labutte.png",
+        "linkedin": "https://www.linkedin.com/in/lauren-labutte-design/",
+    },
+    "oudahmane": {
+        "name": "Nassila Oudahmane (She/Her)",
+        "company": "Ryerson University",
+        "bio": "Nassila Oudahmane is a third-year student at the Ryerson School of Interior Design (RSID) and a freelance multidisciplinary artist based in Toronto, Canada. Through her studies, she is constantly learning and evaluating her strong passion for Interior Design and Architecture — a passion that aims to evoke emotional connections for the individuals experiencing her designs through many of the human senses. Her background in fine arts and fabrication are often incorporated within her designs. Currently, she is working at The RSID Design Centre — where she is gaining invaluable real-life office, industrial and graphic design experience while contributing to sustainable material research.",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fc35ae6ec8c0abe496_oudahmane.png",
+        "site": "https://nassilaoudahmane.myportfolio.com/",
+        "linkedin": "https://www.linkedin.com/in/nassila-oudahmane-2863781a3/",
+        "instagram": "nassila.oudahmane",
+    },
+    "yang": {
+        "name": "Meimei Yang (She/Her)",
+        "company": "Ryerson University",
+        "bio": "Meimei Yang is a third-year student Interior Designer based in Tkaronto/Toronto, Canada, studying at the Ryerson School of Interior Design. Meimei is at her best when she is creating and making. Her design ethos is heavily influenced by her background in visual arts, while her design process involves (fun)ctional considerations and ideas that tell a story. She is actively expanding her creative and digital skill sets in exploring various advanced technical design typologies and manufacturing processes. Currently, Meimei works as an Interior Design Research Associate at Ryerson University, and as an Interior Design Intern at AXIA Design Associates.",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fe771a1a12ffb08269_yang.png",
+        "site": "https://www.bymeimeiyang.com/",
+        "linkedin": "https://www.linkedin.com/in/meimei-yang/",
+        "instagram": "meimeiyng",
+    },
+    "braitmayer": {
+        "name": "Karen Braitmayer (She/Her)",
+        "company": "Studio Pacifica",
+        "bio": "Architect Karen L. Braitmayer, FAIA, is the founding principal of Studio Pacifica, an accessibility consulting firm based in Seattle, Washington. Her “good fight” has consistently focused on supporting equity and full inclusion for persons with disabilities. In 2019, she was chosen as the national winner of the AIA Whitney M. Young, Jr. award—a prestigious award given to an architect who “embodies social responsibility and actively addresses a relevant issue”. In the award’s 48-year history, she was the first recipient honored for their work in the area of civil rights for persons with disabilities. Braitmayer was also appointed by President Barack Obama to the United States Access Board, a position she retains today.",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fb1cff2c77f2ef7326_braitmeyer.png",
+        "site": "https://studiopacificaseattle.com/",
+        "linkedin": "linkedin.com/in/karenbraitmayer",
+    },
+    "zver": {
+        "name": "William Zver (He/Him)",
+        "company": "LRI Engineering Inc.",
+        "bio": "With over 6 years of experience in architectural technology and accessibility consulting, William has experience applying barrier-free/accessibility design requirements of the Building Code to various types of projects, including educational institutions, healthcare facilities, and retail fit-outs.</br></br>William’s experience, paired with his knowledge of accessibility (barrier-free design and universal design), allows him to think and problem solve alongside clients to meet and exceed the Code while also being respectful of the design intent of the project team.</br></br>As an Associate, William is often sought out for his depth of knowledge in applying multiple required Codes and Standards to projects to help facilitate meeting the most restrictive Codes, while promoting the concepts of universal design. Clients and peers alike reach out for his strong problem-solving skills and technical understanding of the barrier-free design requirements of Building Code, the AODA, and other best practice standards.",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fe4f1ab831176a2a1d_zver.png",
+        "email": "wzver@lrifire.com",
+        "linkedin": "https://www.linkedin.com/in/william-zver-b-arch-tech-c-tech-rhfac-13848741/",
+    },
+    "pitoglou": {
+        "name": "Fotini Pitoglou (She/Her)",
+        "company": "",
+        "bio": "Fotini Pitoglou is a licensed architect in Ontario, Canada, the UK, and Greece. She has broad work experience on award winning projects ranging from high-profile mixed-use projects to luxury residential projects while working in reputable offices in Canada and Greece. She holds master's degrees from the University of Waterloo and the Aristotle University of Thessaloniki, where she conducted extensive research on hospitality, and community building. Her work has been published on various websites in the architecture industry, and was presented at the Changing Cities conference.</br></br>Additionally, Fotini is actively involved within the architectural community, being an executive member of BEAT, as well as through mentoring students and young architects. She has been a guest critic at the University of Toronto, and she is also the former Chair of RAIC EP Committee. Currently she is a member of the RAIC ConED Advisory Committee, which enables her to advocate for young professionals' continued growth across Canada. She frequently attends mentoring sessions and panel discussions by non-profit organizations and various educational institutions.",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fdaf95c225f22727fe_pitoglou.png",
+        "email": "fotini.pitoglou@gmail.com",
+        "instagram": "think_white_arch",
+        "linkedin": "https://www.linkedin.com/in/fpitoglou/",
+    },
+    "wu": {
+        "name": "Daniel Wu (He/Him)",
+        "company": "DataOps",
+        "bio": "Dan Wu is a Product Manager at a leading DataOps startup. Our mission is to help data platform owners and engineers build better trusted data products. He’s advocated for data ethics and inclusive urban innovation in TechCrunch, Harvard Business Review, and Bloomberg. He's helped Fortune 500 companies, governments, and startups on ethical & agile data strategies. He also holds a Harvard J.D. & Ph.D.",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fd23801eb7058bd9ab_wu.png",
+        "linkedin": "https://www.linkedin.com/in/wu12345/",
+    },
+    "gluzberg": {
+        "name": "Kfir Gluzberg (He/Him)",
+        "company": "Kilogram Studio",
+        "bio": "Kfir Gluzberg is an architect and designer who founded Kilogram Studio in 2014. The studio designs places and objects that connect people. His work looks at the relationship of the designer and fabricator, planning policy and the design of interiors as an extension of our Canadian urban environment. Gluzberg sees his role as architect and community leader, and extends his work into teaching, editing, and volunteerism. His instruction includes technical, theory, and studio based courses. Currently, his practice is researching design solutions for Canadian seniors’ housing with a focus on the LGBT2Q+ community and new pathways to safe and affordable housing models.",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fb73bd5e10f2c48fff_gluzberg.png",
+        "linkedin": "http://www.linkedin.com/in/kfirgluzberg",
+        "instagram": "kilogramstudio",
+        "email": "kfir@ryerson.ca",
+        "site": "https://www.kilogramstudio.ca",
+    },
+    "hamilton": {
+        "name": "Daej Hamilton (She/Her)",
+        "company": "Daej Designs",
+        "bio": "My name is Daej Hamilton and I'm a furniture maker/designer based in Toronto. I first started woodworking in the 6th grade and as I grew up I noticed that there weren't many people in this field who looked like me. I realized that there was a huge lack of awareness when it came to woodworking/ furniture making and the black community, especially women who make furniture as a career. My goal is to continue to inspire and educate.  I want to not only shine a light on women of colour in woodworking but also, be the representation I wish I had.",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fc9386fc1047b103e9_hamilton.png",
+        "instagram": "daejdesigns",
+        "email": "info@daejdesigns.com",
+    },
+    "zhang": {
+        "name": "Fan Zhang (She/Her)",
+        "company": "AwAwDe",
+        "bio": "Fan Zhang founded her practice AwAwDe (Awesome Awesome Designs) in 2015. She graduated from the University of Toronto with a bachelor's in Applied Science and Engineering and a master's in Architecture. Before starting AwAwDe, Fan worked in numerous architecture offices including HWKN (New York), BIG (Copenhagen), MAD (Beijing), and B+H (Toronto). Her built work ranges from single-family housing to institutional complexes. Through her experience working and living in different countries and cultures, Fan has developed a great passion for the cross-discipline of vernacular architecture and modern social communities.",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fe1e21c7ee1cef9b4c_zhang.png",
+        "email": "f.zhang@awawde.com",
+    },
+    "soto": {
+        "name": "Lucía Soto",
+        "company": "Comite de proyectos",
+        "bio": "We are an interior and furniture design studio founded in 2014 by Andrea Flores and Lucía Soto in Mexico City.</br>Our work is very influenced by our culture. The big spectrum of great craftsmanship is one of the values we appreciate the most of Mexico. </br>We think that design is a cultural conduct that has the power to generate changes from the individual to the collective spheres. We have the capacity to start a conversation with society and it is our responsibility to know what we want to say. </br>We also develop interior projects where we love to study the relation between people and spaces. We offer spatial solutions with an aesthetic approach that encourage the integration between individuals and living spaces.",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fd0b7cda745372da87_soto.png",
+        "site": "https://www.comitedeproyectos.mx",
+        "instagram": "cpmx",
+    },
+    "flores": {
+        "name": "Andrea Flores",
+        "company": "Comite de proyectos",
+        "bio": "We are an interior and furniture design studio founded in 2014 by Andrea Flores and Lucía Soto in Mexico City.</br>Our work is very influenced by our culture. The big spectrum of great craftsmanship is one of the values we appreciate the most of Mexico. </br>We think that design is a cultural conduct that has the power to generate changes from the individual to the collective spheres. We have the capacity to start a conversation with society and it is our responsibility to know what we want to say. </br>We also develop interior projects where we love to study the relation between people and spaces. We offer spatial solutions with an aesthetic approach that encourage the integration between individuals and living spaces.",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fb1e205ca69ea84433_flores.png",
+        "site": "https://www.comitedeproyectos.mx",
+        "instagram": "cpmx",
+    },
+    "green": {
+        "name": "Kimberley Green (She/Her)",
+        "company": "Maison Naibu",
+        "bio": "Maison Naibu Inc. is a fully female-owned interior design firm providing design and consulting services for interior spaces. With over 19 years of combined experience, we have designed spaces for workplace, retail, residential and commercial.  </br></br>We recognize the women that came before us in business but also in our households who led the path and showed us the way. At Maison Naibu we strive to create and recognize gender equality and create an inclusive work environment with our clients and our partners.  We're grateful to have had many female influences in our lives who have greatly impacted our passion and drive for success and who've paved the way for us as female business owners.",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fbf64878d6a74b57a2_green.png",
+        "instagram": "maisonnaibu",
+        "linkedin": "https://www.linkedin.com/company/maison-naibu-inc/?originalSubdomain=ca"
+    },
+    "dicarlo": {
+        "name": "Lisa Di Carlo (She/Her)",
+        "company": "Maison Naibu",
+        "bio": "Maison Naibu Inc. is a fully female-owned interior design firm providing design and consulting services for interior spaces. With over 19 years of combined experience, we have designed spaces for workplace, retail, residential and commercial.  </br></br>We recognize the women that came before us in business but also in our households who led the path and showed us the way. At Maison Naibu we strive to create and recognize gender equality and create an inclusive work environment with our clients and our partners.  We're grateful to have had many female influences in our lives who have greatly impacted our passion and drive for success and who've paved the way for us as female business owners.",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fb25efbe1ebac8f2a1_dicarlo.png",
+        "instagram": "maisonnaibu",
+        "linkedin": "https://www.linkedin.com/company/maison-naibu-inc/?originalSubdomain=ca"
+    },
+    "huard": {
+        "name": "Corinne Huard (She/Her)",
+        "company": "Joven Huard",
+        "bio": "Corinne Huard, co-founded JOVEN HUARD design studio (JH) in 2017. After 14 years of spearheading Business Development at Yabu Pushelberg, a leap of faith culminated into an inspirational all-female team of energetic and strategic design professionals.</br></br>The design firm evolved into a collective better aligning with their core philosophies. Based on referrals and loyal client groups, JOVEN HUARD has developed an international reputation for sustainable and engaging spaces. Every environment is meticulously curated to respect and highlight its unique identity. Studio projects include luxury resorts such as Six Senses in Galapagos and the Caribbean, leading lifestyle hotels with brands such as Moxy in Australia, luxury commercial residential projects, and F&B projects in Canada and Europe. The studio continuously evolves by collaborating with prominent global innovators and leaders in their fields.",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fc43ba40c2832fee7c_huard.png",
+        "email": "corinne@jovenhuard.com",
+        "linkedin": "https://www.linkedin.com/in/corinnehuard/"
+    },
+    "lzhang": {
+        "name": "Linda Zhang (She/Her)",
+        "company": "Studio Pararaum",
+        "bio": "Linda Zhang is an assistant professor at Ryerson SID and a principal architect at Studio Pararaum based in Toronto and Zurich. Her design research explores memory, cultural heritage, and identity as they are indexically embodied through emergent technology, matter and material processes.",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fc1cff2caeceef7327_lzhang.png",
+        "site": "https://www.pararaum.com",
+        "linkedin": "https://www.linkedin.com/in/lindayzhang/",
+        "instagram": "pararaum",
+    }
 }
+
+const openingCeremony = [
+    speakers.falzon,
+    speakers.weinthal,
+]
 
 const colourInUrbanLandscape = [
     speakers.tomislav,
@@ -215,14 +373,48 @@ const intersectionality = [
 
 const healthWellness = [
     speakers.park,
+    speakers.kenny,
+]
+
+const softwareTutorials = [
+    speakers.labutte,
+    speakers.oudahmane,
+    speakers.yang,
+]
+
+const accessibleDesign = [
+    speakers.braitmayer,
+    speakers.zver,
+]
+
+const affordableHousing = [
+    speakers.wu,
+    speakers.gluzberg,
+    speakers.pitoglou,
+]
+
+const womenEntrepreneurship = [
+    speakers.hamilton,
+    speakers.zhang,
+    speakers.soto,
+    speakers.flores,
+    speakers.green,
+    speakers.dicarlo,
+    speakers.huard,
+    speakers.lzhang
 ]
 
 const eventMap = new Map();
+eventMap.set("openingCeremony", openingCeremony);
 eventMap.set("colourInUrbanLandscape", colourInUrbanLandscape);
 eventMap.set("postPandemicDesign", postPandemicDesign);
 eventMap.set("indigenousDesign", indigenousDesign);
 eventMap.set("intersectionality", intersectionality);
 eventMap.set("healthWellness", healthWellness);
+eventMap.set("softwareTutorials", softwareTutorials);
+eventMap.set("accessibleDesign", accessibleDesign);
+eventMap.set("affordableHousing", affordableHousing);
+eventMap.set("womenEntrepreneurship", womenEntrepreneurship);
 
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; --i) {
@@ -234,9 +426,9 @@ function shuffleArray(array) {
     return array;
 }
 
-function populateCard(card) {
+function populateCard(card, shouldShuffle = true) {
     const info = eventMap.get(card);
-    const shuffledArray = shuffleArray(info);
+    const shuffledArray = shouldShuffle ? shuffleArray(info) : info;
 
     let length = Math.min(info.length, 3);
 
@@ -256,11 +448,16 @@ function populateCard(card) {
 }
 
 function randomizePanelists() {
+    populateCard("openingCeremony", false);
     populateCard("colourInUrbanLandscape");
     populateCard("postPandemicDesign");
     populateCard("indigenousDesign");
     populateCard("intersectionality");
     populateCard("healthWellness");
+    populateCard("softwareTutorials");
+    populateCard("accessibleDesign");
+    populateCard("affordableHousing");
+    populateCard("womenEntrepreneurship");
 }
 
 function showPopup(popupInfo) {
