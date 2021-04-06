@@ -2157,7 +2157,10 @@ function generatePanelist(panelist) {
             <h3>${panelist.name}</h3>
             <p>${panelist.bio}</p>
             <div class="yes-popup-panelist-links">
-                ${panelist.site ? "has site" : ""}
+                ${panelist.site ? `<a target="_blank" href="${panelist.site}" class="yes-popup-social-button"><img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606cd7065509511879deb533_site.svg"/></a>` : ""}
+                ${panelist.email ? `<a target="_blank" href="mailto:${panelist.email}" class="yes-popup-social-button"><img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606cd706dac82d1b34937120_email.svg"/></a>` : ""}
+                ${panelist.instagram ? `<a target="_blank" href="https://www.instagram.com/${panelist.instagram}" class="yes-popup-social-button"><img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606cd60a610ab13367d6871a_instagram.svg"/></a>` : ""}
+                ${panelist.linkedin ? `<a target="_blank" href="${panelist.linkedin}" class="yes-popup-social-button"><img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606cd5f7fa582966df1a5f1d_linkedin.svg"/></a>` : ""}
             </div>
         </div>
     </div>
