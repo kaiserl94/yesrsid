@@ -15,7 +15,7 @@
 
     font-display: swap;
     font-style: normal;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 @font-face {
@@ -25,7 +25,7 @@
 
     font-display: swap;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 @font-face {
@@ -35,7 +35,7 @@
 
     font-display: swap;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 :root {
@@ -121,6 +121,11 @@ html, body {
 
 .yes-button-right {
     margin-left: auto;
+}
+
+.yes-button-center {
+    margin: 0 auto;
+    margin-top: 60px;
 }
 
 .yes-branding > img {
@@ -953,7 +958,7 @@ html, body {
     left: 0;
     right: 0;
     z-index: 100;
-    padding: 100px;
+    padding: 30px;
     display: none;
 }
 
@@ -965,9 +970,17 @@ html, body {
     width: 100%;
     height: 100%;
     background-color: white;
-    padding: 30px;
     position: relative;
-    border-radius: 30px;
+    border-radius: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.yes-popup-content {
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
 }
 
 
@@ -1026,4 +1039,56 @@ html, body {
 
 .yes-popup-close:hover > svg {
     fill: white;
+}
+
+.yes-popup-panelist {
+    display: flex;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.yes-popup-panelist > img {
+    max-width: 150px;
+    height: 150px;
+    display: block;
+    margin-right: 30px;
+}
+
+.yes-popup-panelist-info {
+    width: 100%;
+}
+
+.yes-popup-panelist-info > h2 {
+    font-size: var(--sub-header-font-size);
+    font-family: var(--base-font-family);
+    line-height: var(--sub-header-font-size);
+    text-align: left;
+    color: black;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.yes-popup-panelist-info > h3 {
+    font-size: var(--sub-sub-header-font-size);
+    font-family: var(--base-font-family);
+    line-height: var(--sub-sub-header-font-size);
+    text-align: left;
+    color: black;
+    font-weight: 600;
+    margin: 0;
+    width: 100%;
+}
+
+.yes-popup-panelist-info > p {
+    font-size: var(--base-font-size);
+    font-family: var(--base-font-family);
+    line-height: 24px;
+    text-align: left;
+    color: black;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 30px;
+    width: 100%;
 }

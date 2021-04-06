@@ -336,6 +336,20 @@ const speakers = {
         "site": "https://www.pararaum.com",
         "linkedin": "https://www.linkedin.com/in/lindayzhang/",
         "instagram": "pararaum",
+    },
+    "epstein": {
+        "name": "Royce Epstein (She/Her)",
+        "company": "Mohawk Group",
+        "bio": "Royce Epstein is the A&D Design Director for Mohawk Group. As the face to A&D, Royce shares her passion and vision for design, cultural trends, and the meaning of materials in a broad context. Her role is to evolve and share Mohawk Group’s Design Vision with the A&D community, and to leverage product design with what A&D desires. Constantly on the watch for new trends in all aspects of culture, Royce feeds this insight to our industry’s touch points. A veteran materials and product specialist, Royce spent two decades working in A&D firms before Mohawk. She is based in Philadelphia.",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fb8eb942472765eaf2_epstein.png",
+        "email": "royce_epstein@mohawkind.com",
+        "instagram": "mohawkgroup",
+    },
+    "klassen": {
+        "name": "Filiz Klassen",
+        "company": "Ryerson University",
+        "bio": "",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fc9a08b65f72527796_klassen.png",
     }
 }
 
@@ -376,6 +390,11 @@ const healthWellness = [
     speakers.kenny,
 ]
 
+const sustainableDesign = [
+    speakers.epstein,
+    speakers.klassen,
+]
+
 const softwareTutorials = [
     speakers.labutte,
     speakers.oudahmane,
@@ -411,6 +430,7 @@ eventMap.set("postPandemicDesign", postPandemicDesign);
 eventMap.set("indigenousDesign", indigenousDesign);
 eventMap.set("intersectionality", intersectionality);
 eventMap.set("healthWellness", healthWellness);
+eventMap.set("sustainableDesign", sustainableDesign);
 eventMap.set("softwareTutorials", softwareTutorials);
 eventMap.set("accessibleDesign", accessibleDesign);
 eventMap.set("affordableHousing", affordableHousing);
@@ -436,10 +456,7 @@ function populateCard(card, shouldShuffle = true) {
         const picture = document.getElementById(card + "-panelist-" + i + "-picture");
         const companyName = document.getElementById(card + "-panelist-" + i + "-company");
         const name = document.getElementById(card + "-panelist-" + i + "-name");
-        console.log(picture, companyName, name);
-        console.log("entry", shuffledArray[i]);
         const url = shuffledArray[i].picture.length > 0 ? shuffledArray[i].picture : "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a4120a7e782f0d23512ec_default.png";
-        console.log("url", url);
 
         picture.src = url;
         companyName.innerText = shuffledArray[i].company;
@@ -454,6 +471,7 @@ function randomizePanelists() {
     populateCard("indigenousDesign");
     populateCard("intersectionality");
     populateCard("healthWellness");
+    populateCard("sustainableDesign");
     populateCard("softwareTutorials");
     populateCard("accessibleDesign");
     populateCard("affordableHousing");
@@ -463,11 +481,6 @@ function randomizePanelists() {
 function showPopup(popupInfo) {
     const info = eventMap.get(popupInfo);
     const eventInfo = events[popupInfo];
-
-    if (!popup) {
-        popup = document.getElementById("yes-popup");
-    }
-    popup.classList.toggle("open");
 
     if (eventInfo.subtitle) {
         const subtitle = document.getElementById("yes-popup-subtitle");
@@ -480,10 +493,47 @@ function showPopup(popupInfo) {
     const description = document.getElementById("yes-popup-description");
     description.innerHTML = eventInfo.description;
 
-
-    for (let i = 0; i < info.length; ++i) {
-        // ! generate panelist cards here;
+    if (!panelistContainer) {
+        panelistContainer = document.getElementById("yes-popup-panelists");
     }
+    panelistContainer.innerHTML = "";
+    
+    if (!popupContent) {
+        popupContent = document.getElementById("yes-popup-content");
+    }
+    popupContent.scrollTop = 0;
+
+    if (info) {
+        for (let i = 0; i < info.length; ++i) {
+            generatePanelist(info[i]);
+        }
+    }
+
+    if (!popup) {
+        popup = document.getElementById("yes-popup");
+    }
+    popup.classList.toggle("open");
+}
+
+function generatePanelist(panelist) {
+    if (!panelistContainer) {
+        panelistContainer = document.getElementById("yes-popup-panelists");
+    }
+    const panelistDiv = `
+    <div class="yes-popup-panelist">
+        <img src="${panelist.picture.length > 0 ? panelist.picture : "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a4120a7e782f0d23512ec_default.png"}"/>
+        <div class="yes-popup-panelist-info">
+            <h2>${panelist.company}</h2>
+            <h3>${panelist.name}</h3>
+            <p>${panelist.bio}</p>
+            <div class="yes-popup-panelist-links">
+                ${panelist.site ? "has site" : ""}
+            </div>
+        </div>
+    </div>
+    `;
+
+    panelistContainer.innerHTML += panelistDiv;
 }
 
 function closePopup() {
@@ -492,6 +542,12 @@ function closePopup() {
     }
     popup.classList.toggle("open");
 }
+
 var popup;
+var panelistContainer;
+var popupContent
 popup = document.getElementById("yes-popup");
+panelistContainer = document.getElementById("yes-popup-panelists");
+popupContent = document.getElementById("yes-popup-content");
+
 randomizePanelists();
