@@ -198,7 +198,10 @@ const speakers = {
     "kenny": {
         "name": "Ena Kenny",
         "company": "Stantec",
-        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fcf049165b6e30136e_kenny.png"
+        "bio": "My design work is driven by empathy. I love to listen, solve problems, and collaborate—creating supportive, functional and beautiful environments for patients, care partners and providers.  Some of my favourite projects have been for elders, children, or environments for mental health and wellness. With my background in interior design and architecture, I thrive in Stantec’s multidisciplinary office.  I have been fortunate to focus on healthcare projects, from smaller lab and hospital renovations, to extensive experience with large scale AFP projects and traditional design builds.   When not at work, I enjoy city life with my husband and two small children.",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fcf049165b6e30136e_kenny.png",
+        "email": "ena.kenny@stantec.com",
+        "linkedin": "https://www.linkedin.com/in/ena-kenny-a709557a/",
     },
     "yan": {
         "name": "Amy Yan (She/Her)",
@@ -529,7 +532,10 @@ function generatePanelist(panelist) {
             <h3>${panelist.name}</h3>
             <p>${panelist.bio}</p>
             <div class="yes-popup-panelist-links">
-                ${panelist.site ? "has site" : ""}
+                ${panelist.site ? `<a target="_blank" href="${panelist.site}" class="yes-popup-social-button"><img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606cd7065509511879deb533_site.svg"/></a>` : ""}
+                ${panelist.email ? `<a target="_blank" href="mailto:${panelist.email}" class="yes-popup-social-button"><img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606cd706dac82d1b34937120_email.svg"/></a>` : ""}
+                ${panelist.instagram ? `<a target="_blank" href="https://www.instagram.com/${panelist.instagram}" class="yes-popup-social-button"><img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606cd60a610ab13367d6871a_instagram.svg"/></a>` : ""}
+                ${panelist.linkedin ? `<a target="_blank" href="${panelist.linkedin}" class="yes-popup-social-button"><img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606cd5f7fa582966df1a5f1d_linkedin.svg"/></a>` : ""}
             </div>
         </div>
     </div>
