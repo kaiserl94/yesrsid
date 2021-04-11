@@ -564,10 +564,16 @@ function generatePanelist(panelist) {
 }
 
 function closePopup() {
+    if (!popupContent) {
+        popupContent = document.getElementById("yes-popup-content");
+    }
+    popupContent.scrollTop = 0;
+
     if (!popup) {
         popup = document.getElementById("yes-popup");
     }
     popup.classList.toggle("open");
+
 }
 
 var popup;
