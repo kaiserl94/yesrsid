@@ -5,7 +5,7 @@ const events = {
     },
     "virtualNetworking1": {
         "title": "Virtual Networking",
-        "description": "After kicking off our expo in the Opening Ceremony, join us in embracing an exciting new way of networking! The networking of the future, where you can connect to others from all over the world - virtually! Details and platform will be announced during our Opening Ceremony and provided to registrants closer to the time of the event.</br></br>Exclusive to RSID 4th/5th+ year students, RSID Alumni, Industry, Ryerson Faculty and Staff.",
+        "description": "After kicking off our expo in the Opening Ceremony, join us in embracing an exciting new way of networking! The networking of the future, where you can connect to others from all over the world - virtually! Details and platform will be announced during our Opening Ceremony and provided to registrants closer to the time of the event.</br></br>Exclusive to RSID 4th/5th+ year students, RSID Alumni, Industry, Ryerson Faculty and Staff.</br></br>Guest List Coming Soon!",
     },
     "colourInUrbanLandscape": {
         "subtitle": "Lunch and Learn",
@@ -19,7 +19,7 @@ const events = {
     },
     "virtualNetworking2": {
         "title": "Virtual Networking",
-        "description": "Join us in embracing an exciting new way of networking, this time open to all RSID Students of all years, RSID Alumni, Industry, Ryerson Faculty and Staff! The networking of the future, where you can connect to others from all over the world - virtually! Details and platform will be announced during our Opening Ceremony and provided to registrants closer to the time of the event.",
+        "description": "Join us in embracing an exciting new way of networking, this time open to all RSID Students of all years, RSID Alumni, Industry, Ryerson Faculty and Staff! The networking of the future, where you can connect to others from all over the world - virtually! Details and platform will be announced during our Opening Ceremony and provided to registrants closer to the time of the event.</br></br>Exclusive to RSID students in all years, RSID Alumni, Industry, Ryerson Faculty and Staff.",
     },
     "indigenousDesign": {
         "subtitle": "Lunch and Learn",
@@ -39,7 +39,7 @@ const events = {
     "sustainableDesign": {
         "subtitle": "Keynote Presentation",
         "title": "Sustainable Design",
-        "description": "Royce Epstein speaks to cultural trends and meaning of materiality in this presentation all about sustainability in design. What are true sustainable materials and how can we use them to better design with ecological health in mind? Moderated by Filiz Klassen, you don’t want to miss out on important conversations such as these!",
+        "description": "Royce Epstein speaks to cultural trends in this presentation called Futurewave, looking at five ideas driving design today. This talk covers materials and sustainability in design as we look towards the future. Moderated by Filiz Klassen, you don’t want to miss out on important conversations such as these!",
     },
     "softwareTutorials": {
         "subtitle": "Software Tutorials",
@@ -54,7 +54,7 @@ const events = {
     "affordableHousing": {
         "subtitle": "Table Talk",
         "title": "Affordable Housing",
-        "description": "Let’s talk about affordable housing, how economic realities impact how we design, and the process behind bringing projects to life! Moderated by Kfir Gluzberg, this keynote includes presentations from two members of the official jury panel for the International Architecture Competition: Toronto Affordable Housing Challenge, Fotini Pitoglou and Daniel Wu.",
+        "description": "Let’s talk about affordable housing and how economic realities impact how we design. Moderated by Kfir Gluzberg, this table talk includes Fontini Pitglou, executive member of BEAT and mentor to students and young architects, and Daniel Wu, Product Manager at a leading Data Operations startup with a passion for affordable housing. Both panelists are members of the official jury panel for the Toronto Affordable Housing Challenge.",
     },
     "womenEntrepreneurship": {
         "subtitle": "Table Talk",
@@ -76,7 +76,7 @@ const speakers = {
     },
     "webb": {
         "name": "Alan Webb (He/Him)",
-        "company": "LeuWebb Projects",
+        "company": "LeuWebb Projects - Moderator",
         "bio": "Alan Webb is a licensed architect as well as a practising artist, art consultant and educator. As co-director of the interdisciplinary studio LeuWebb Projects, he works at a variety of scales and across a range of media. LeuWebb’s collaborative practice draws on art and architecture, seeking to engage people with both the tangible and the ephemeral by creating art that stimulates curiosity, suggests play, and inspires its participants. Webb has lived and worked in Montreal, New York, Rome and Helsinki, and currently resides in Toronto.",
         "email": "alan.webb@ryerson.ca",
         "instagram": "leuwebb",
@@ -92,16 +92,16 @@ const speakers = {
     "mekhayech": {
         "name": "Anwar Mekhayech (He/Him)",
         "company": "Design Agency",
-        "bio": "Anwar Mekhayech is one of the co-founders of DesignAgency and brings an international perspective to the design of projects that he works on. Working primarily overseas, his thorough understanding of the relationship between brands and their design has given him opportunities worldwide in developing branded environments for renowned clients such as NeueHouse, Momofuku restaurants, Generator and Pendry Hotels. Anwar graduated with honours from the University of Western Ontario with a degree in mechanical engineering design. His eclectic sense of design, studies in engineering and interest in travel and culture all contribute to his passion for design and how it shapes the world we live in.",
+        "bio": "Anwar Mekhayech is one of the co-founders of Design Agency and brings an international perspective to the design of projects that he works on. Working primarily overseas, his thorough understanding of the relationship between brands and their design has given him opportunities worldwide in developing branded environments for renowned clients such as NeueHouse, Momofuku restaurants, Generator and Pendry Hotels. Anwar graduated with honours from the University of Western Ontario with a degree in mechanical engineering design. His eclectic sense of design, studies in engineering and interest in travel and culture all contribute to his passion for design and how it shapes the world we live in.",
         "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fc4f1ab8123c6a2a0f_mekhayech.png"
     },
     "dowling": {
         "name": "Catherine Dowling (She/Her)",
-        "company": "Ryerson University",
+        "company": "Ryerson University - Moderator",
         "bio": "Catherine Dowling completed a Master of Education from OISE at the University of Toronto following degrees in Architecture and Environmental Studies at the University of Waterloo, a degree in Interior Design at the University of Manitoba and study at Arcosanti in Arizona. As a practitioner and academic her teaching, research and practice is founded on design and construction excellence, design thinking, with an emphasis on the process of making. Catherine’s academic research explores the relationship between design and learning, the realm of the handmade, indigenous material culture, and the impact of kinesthetic creation on the processes of critical thinking, education and cultural design literacy.",
         "email": "cdowling@ryerson.ca",
         "linkedin": "https://www.linkedin.com/in/catherine-dowling-16855419/",
-        "picture": ""
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fa095e76dd810eec54_dowling.png"
     },
     "cornelius": {
         "name": "Chris Cornelius (He/Him)",
@@ -113,7 +113,7 @@ const speakers = {
     },
     "heidenheim": {
         "name": "Laura Heidenheim (She/Her)",
-        "company": "Ryerson University",
+        "company": "Ryerson University - Moderator",
         "bio": "Laura Heidenheim is a settler of mixed European and German Jewish ancestry, born and raised in London Ontario the traditional territory of the Anishinabek, Haudenosaunee and Delaware Peoples. For the past four years she has been learning from and working with MMIWGT2S+ Family Members, engaging in grass-roots projects. Laura is one of the co-creators of Shades of Our Sisters, an exhibit which exists with the purpose of honouring MMIWGT2S+ and giving Families space to celebrate the lives of their loved ones. She is currently the Manager of Saagajiwe, FCAD's Interdisciplinary Centre for Indigenous Research and Creation.",
         "email": "laura.heidenheim@ryerson.ca",
         "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fc8eb942b86565eaf3_heidenheim.png"
@@ -127,21 +127,23 @@ const speakers = {
         "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30faaf95c24a862727f4_abubakare.png"
     },
     "cleckley": {
-        "name": "Elgin Cleckley",
+        "name": "Elgin Cleckley (He/Him)",
         "company": "University of Virginia",
-        "bio": "",
+        "bio": "Elgin Cleckley, NOMA, is an Assistant Professor of Architecture at UVA with an appointment in the Curry School of Education and the School of Nursing. He is a designer and principal of _mpathic design – a Design Thinking pedagogy, initiative, and professional practice. After studying architecture at the University of Virginia (’93) and Princeton University (’95), he collaborated with DLR Group (Seattle), MRSA Architects (Chicago), and Baird Sampson Neuert Architects (Toronto) on award-winning civic projects. Before joining UVA’s Design Thinking program in 2016, he was the 3D Group Leader and Design Coordinator at the Ontario Science Centre (Toronto). This work produced the world’s first museum/design thinking architectural space (the Weston Family Innovation Centre).  Elgin is the recent winner of the 2020 ACSA Diversity Achievement Award, and the 2021 Dumbarton Oaks Mellon Fellowship in Urban Landscape Studies. _mpathic design’s practice includes collaborations with the City of Lynchburg, and the Albemarle County Office of Equity and Diversity. Elgin is also the Design Director at the UVa Equity Center, and the NOMA Project Pipeline: Architecture Mentorship Program.",
         "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fa23801e5b248bd993_cleckley.png"
     },
     "abuzeinah": {
-        "name": "Juwana Abu-Zeinah",
-        "company": "",
-        "bio": "",
-        "picture": ""
+        "name": "Juwana Abu-Zeinah (She/Her)",
+        "company": "HOK",
+        "bio": "Juwana Abu-Zeinah is an award-winning designer who has won the Design Research Award for her research focusing on integrating biophilic elements to reduce patient vulnerability to hospital-acquired infections while waiting in emergency waiting rooms. Juwana has worked on diverse interior design and architecture projects ranging from sports + rec centers to workplace, and residential/hospitality with a focus on user experience, wellness, equitable design and sustainability. She is currently working with HOK and is an advocate for diversity and research in design.",
+        "picture": "",
+        "instagram": "juwanaabuzeinah",
+        "linkedin": "https://www.linkedin.com/in/juwanaabuzeinah/",
     },
     "berman": {
-        "name": "Ila Berman",
-        "company": "",
-        "bio": "",
+        "name": "Ila Berman (She/Her)",
+        "company": "University of Virginia",
+        "bio": "Ila Berman, Dean of the School of Architecture, and Edward E. Elson Professor at the University of Virginia, and Principal of Scaleshift design, is an architect, theorist, and curator of architecture and urbanism whose research investigates the relationship between culture and the evolution of contemporary material, technological and spatial practices, including issues at the intersections of sexual subjectivity, gender, feminism, and architecture.",
         "picture": ""
     },
     "yabu": {
@@ -173,7 +175,7 @@ const speakers = {
     },
     "pavka": {
         "name": "Evan Pavka (He/Him)",
-        "company": "Ryerson University",
+        "company": "Ryerson University - Moderator",
         "bio": "Evan Pavka is a writer, editor and educator based in Tkaronto/Toronto. Frequently contributing to platforms such as ArchDaily, -SITE, The Architect’s Newspaper and Azure, his writing has also been featured in edited volumes by Princeton University, the University of Virginia and KTH Royal Institute of Technology in Stockholm. He holds a Master of Architecture in Architectural History and Theory from McGill University.",
         "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fcf04916ced130136f_pavka.png"
     },
@@ -254,7 +256,7 @@ const speakers = {
     },
     "pitoglou": {
         "name": "Fotini Pitoglou (She/Her)",
-        "company": "",
+        "company": "Forrec",
         "bio": "Fotini Pitoglou is a licensed architect in Ontario, Canada, the UK, and Greece. She has broad work experience on award winning projects ranging from high-profile mixed-use projects to luxury residential projects while working in reputable offices in Canada and Greece. She holds master's degrees from the University of Waterloo and the Aristotle University of Thessaloniki, where she conducted extensive research on hospitality, and community building. Her work has been published on various websites in the architecture industry, and was presented at the Changing Cities conference.</br></br>Additionally, Fotini is actively involved within the architectural community, being an executive member of BEAT, as well as through mentoring students and young architects. She has been a guest critic at the University of Toronto, and she is also the former Chair of RAIC EP Committee. Currently she is a member of the RAIC ConED Advisory Committee, which enables her to advocate for young professionals' continued growth across Canada. She frequently attends mentoring sessions and panel discussions by non-profit organizations and various educational institutions.",
         "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fdaf95c225f22727fe_pitoglou.png",
         "email": "fotini.pitoglou@gmail.com",
@@ -262,15 +264,15 @@ const speakers = {
         "linkedin": "https://www.linkedin.com/in/fpitoglou/",
     },
     "wu": {
-        "name": "Daniel Wu (He/Him)",
-        "company": "DataOps",
+        "name": "Dan Wu (He/Him)",
+        "company": "Leading Data Operations Startup",
         "bio": "Dan Wu is a Product Manager at a leading DataOps startup. Our mission is to help data platform owners and engineers build better trusted data products. He’s advocated for data ethics and inclusive urban innovation in TechCrunch, Harvard Business Review, and Bloomberg. He's helped Fortune 500 companies, governments, and startups on ethical & agile data strategies. He also holds a Harvard J.D. & Ph.D.",
         "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fd23801eb7058bd9ab_wu.png",
         "linkedin": "https://www.linkedin.com/in/wu12345/",
     },
     "gluzberg": {
         "name": "Kfir Gluzberg (He/Him)",
-        "company": "Kilogram Studio",
+        "company": "Kilogram Studio - Moderator",
         "bio": "Kfir Gluzberg is an architect and designer who founded Kilogram Studio in 2014. The studio designs places and objects that connect people. His work looks at the relationship of the designer and fabricator, planning policy and the design of interiors as an extension of our Canadian urban environment. Gluzberg sees his role as architect and community leader, and extends his work into teaching, editing, and volunteerism. His instruction includes technical, theory, and studio based courses. Currently, his practice is researching design solutions for Canadian seniors’ housing with a focus on the LGBT2Q+ community and new pathways to safe and affordable housing models.",
         "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fb73bd5e10f2c48fff_gluzberg.png",
         "linkedin": "http://www.linkedin.com/in/kfirgluzberg",
@@ -335,7 +337,7 @@ const speakers = {
     },
     "lzhang": {
         "name": "Linda Zhang (She/Her)",
-        "company": "Studio Pararaum",
+        "company": "Studio Pararaum - Moderator",
         "bio": "Linda Zhang is an assistant professor at Ryerson SID and a principal architect at Studio Pararaum based in Toronto and Zurich. Her design research explores memory, cultural heritage, and identity as they are indexically embodied through emergent technology, matter and material processes.",
         "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fc1cff2caeceef7327_lzhang.png",
         "site": "https://www.pararaum.com",
@@ -352,10 +354,24 @@ const speakers = {
     },
     "klassen": {
         "name": "Filiz Klassen",
-        "company": "Ryerson University",
-        "bio": "",
+        "company": "Ryerson University - Moderator",
+        "bio": "Filiz Klassen is an artist, researcher and Professor teaching at Ryerson University, School of Interior Design since 1997. Her research emphasizes materiality with a focus on adaptability of architecture and interiors to improve built environments' impact on climate change. She has received industry and government funding for her project Malleable Matter: Material Innovations in Architecture (2005-2010) (Research/Creation grant from the Social Science and Humanities Research Council of Canada, and Integrated Projects Grant from Ontario Arts Council). Professor Klassen has presented at conferences internationally and nationally. Her articles on material innovations and responsive environments are published in books as well as in other academic and professional journals.",
         "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fc9a08b65f72527796_klassen.png",
-    }
+        "email": "fklassen@ryerson.ca",
+        "site": "http://www.filiz-klassen.com/",
+    },
+    "polo": {
+        "name": "Monica Polo (She/Her)",
+        "company": "Ryerson University - Moderator",
+        "bio": "",
+        "picture": "",
+    },
+    "sicat": {
+        "name": "John Sicat",
+        "company": "Ryerson University - Moderator",
+        "bio": "",
+        "picture": "",
+    },
 }
 
 const openingCeremony = [
@@ -381,8 +397,8 @@ const indigenousDesign = [
 
 const intersectionality = [
     speakers.abubakare,
-    speakers.cleckley,
     speakers.abuzeinah,
+    speakers.cleckley,
     speakers.berman,
     speakers.yabu,
     speakers.pushelberg,
@@ -393,6 +409,7 @@ const intersectionality = [
 const healthWellness = [
     speakers.park,
     speakers.kenny,
+    speakers.polo,
 ]
 
 const sustainableDesign = [
@@ -401,6 +418,7 @@ const sustainableDesign = [
 ]
 
 const softwareTutorials = [
+    speakers.yan,
     speakers.labutte,
     speakers.oudahmane,
     speakers.yang,
@@ -409,6 +427,7 @@ const softwareTutorials = [
 const accessibleDesign = [
     speakers.braitmayer,
     speakers.zver,
+    speakers.sicat,
 ]
 
 const affordableHousing = [
@@ -451,7 +470,7 @@ function shuffleArray(array) {
     return array;
 }
 
-function populateCard(card, shouldShuffle = true) {
+function populateCard(card, shouldShuffle = false) {
     const info = eventMap.get(card);
     const shuffledArray = shouldShuffle ? shuffleArray(info) : info;
 
@@ -470,7 +489,7 @@ function populateCard(card, shouldShuffle = true) {
 }
 
 function randomizePanelists() {
-    populateCard("openingCeremony", false);
+    populateCard("openingCeremony");
     populateCard("colourInUrbanLandscape");
     populateCard("postPandemicDesign");
     populateCard("indigenousDesign");

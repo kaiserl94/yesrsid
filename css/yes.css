@@ -177,6 +177,18 @@ html, body {
     margin-bottom: 20px;
 }
 
+.yes-title-header > .yes-header > p {
+    font-size: var(--base-font-size);
+    font-family: var(--base-font-family);
+    text-align: right;
+    max-width: 1000px;
+    color: white;
+    margin: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
 .yes-schedule {
     display: flex;
     flex-wrap: wrap;
@@ -824,10 +836,10 @@ html, body {
 
     .yes-header {
         width: 100%;
-        margin-top: -50px;
+        margin-top: -25px;
     }
 
-    .yes-header > h1, .yes-header > h2 {
+    .yes-header > h1, .yes-header > h2, .yes-header > p {
         text-align: center!important;
         margin: 0 auto!important;
         margin-top: 5px!important;
@@ -937,10 +949,6 @@ html, body {
 
     .yes-last-day {
         margin-top: -325px;
-    }
-
-    .yes-header {
-        margin-top: -80px;
     }
 
     .yes-title-header > .yes-header > h1 {
@@ -1111,10 +1119,6 @@ html, body {
         max-width: 100%;
     }
 
-    .yes-header {
-        margin-top: -120px;
-    }
-
     .yes-title-header > .yes-header > h1 {
         font-size: 24px;
         line-height: 24px;
@@ -1125,6 +1129,10 @@ html, body {
         line-height: 18px;
         margin-top: 5px;
     }
+    .yes-title-header > .yes-header > p {
+        font-size: 14px;
+    }
+
     .yes-button-large {
         max-width: 290px;
         height: 50px;
