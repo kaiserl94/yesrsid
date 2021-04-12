@@ -136,7 +136,7 @@ const speakers = {
         "name": "Juwana Abu-Zeinah (She/Her)",
         "company": "HOK",
         "bio": "Juwana Abu-Zeinah is an award-winning designer who has won the Design Research Award for her research focusing on integrating biophilic elements to reduce patient vulnerability to hospital-acquired infections while waiting in emergency waiting rooms. Juwana has worked on diverse interior design and architecture projects ranging from sports + rec centers to workplace, and residential/hospitality with a focus on user experience, wellness, equitable design and sustainability. She is currently working with HOK and is an advocate for diversity and research in design.",
-        "picture": "",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/60739b53ed9c8129b587b006_juwana.png",
         "instagram": "juwanaabuzeinah",
         "linkedin": "https://www.linkedin.com/in/juwanaabuzeinah/",
     },
@@ -144,7 +144,7 @@ const speakers = {
         "name": "Ila Berman (She/Her)",
         "company": "University of Virginia",
         "bio": "Ila Berman, Dean of the School of Architecture, and Edward E. Elson Professor at the University of Virginia, and Principal of Scaleshift design, is an architect, theorist, and curator of architecture and urbanism whose research investigates the relationship between culture and the evolution of contemporary material, technological and spatial practices, including issues at the intersections of sexual subjectivity, gender, feminism, and architecture.",
-        "picture": ""
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/60739b521ab0de64f5f4e1ab_berman.png"
     },
     "yabu": {
         "name": "George Yabu (He/Him)",
@@ -432,8 +432,8 @@ const accessibleDesign = [
 
 const affordableHousing = [
     speakers.wu,
-    speakers.gluzberg,
     speakers.pitoglou,
+    speakers.gluzberg,
 ]
 
 const womenEntrepreneurship = [
