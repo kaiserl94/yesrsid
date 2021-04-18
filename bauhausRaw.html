@@ -964,8 +964,7 @@ $.fn.twentytwenty = function(options) {
 
 </style>  
 <style>
-
-:root {
+    :root {
     --orange: 232, 133, 97;
     --blue: 108, 127, 191;
     --yellow: 250, 230, 5;
@@ -995,14 +994,12 @@ html, body {
 
 #bauhaus-container {
     max-width: 1242px;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
     margin: 0 auto;
 }
 
 #bauhaus-container > img {
-    max-width: 100vw;
-    max-height: 100vh;
+    max-width: 100%;
 }
 
 
@@ -1068,6 +1065,12 @@ html, body {
     transition: var(--transition);
 }
 
+.button.open {
+    border: 1px solid white!important;
+    background-color: white;
+    box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.8);
+}
+
 .button-center {
     width: 8px;
     height: 8px;
@@ -1085,7 +1088,6 @@ html, body {
     position: absolute;
     box-sizing: border-box;
     width: 500px;
-    min-height: 180px;
     background-color: white;
     box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.4);
     border-radius: 20px;
@@ -1151,7 +1153,30 @@ html, body {
     left: calc(55% - 250px);
 }
 
+@media screen and (max-width: 1282px) {
+    .narritive-title, .narritive-description {
+        padding: 0 20px;
+    }
+}
 
+@media screen and (max-width: 850px) {
+    .tooltip {
+        width: 100%;
+        left: auto!important;
+        top: auto!important;
+        bottom: auto!important;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        height: auto;
+        position: relative;
+        box-shadow: none;
+    }
+    .bottom-arrow {
+        bottom: auto!important;
+        top: -9px!important;
+        transform: none;
+    }
+}
 </style>
 
 <h1 class="narritive-title">Bauhaus</h1>
@@ -1160,10 +1185,15 @@ html, body {
     use of plastic cups and trash dumped in the sea in contrast with the durable, long lasting 
     materials used during the early 1900s.
 </p>
-<div id="bauhaus-container" class="twentytweny-container">
-    <img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/607b34a0fe7bfa3ff17030d9_bauhaus-original.png"/>
-    <img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/607b34a1923ae7054f3112ef_bauhaus.png"/>
-    <button class="button wall-button" onclick="openTooltip('wall')"><div class="button-center"></div></button>
+<div style="position: relative;max-width: 1242px;width: 100%;margin: 0 auto;">
+    <div id="bauhaus-container" class="twentytweny-container">
+        <img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/607b34a0fe7bfa3ff17030d9_bauhaus-original.png"/>
+        <img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/607b34a1923ae7054f3112ef_bauhaus.png"/>
+        <button id="wall-button" class="button wall-button" onclick="openTooltip('wall')"><div class="button-center"></div></button>
+        <button id="couch-button" class="button couch-button" onclick="openTooltip('couch')"><div class="button-center"></div></button>
+        <button id="table-button" class="button table-button" onclick="openTooltip('table')"><div class="button-center"></div></button>
+        <button id="floor-button" class="button floor-button" onclick="openTooltip('floor')"><div class="button-center"></div></button>
+    </div>
     <div class="tooltip wall-tooltip" id="wall-tooltip">
         <svg width="22" height="12"viewBox="0 0 22 14">
             <path fill="#ffffff" d="M21.1,8.8l-7.9-7.9C12-0.3,10-0.3,8.8,0.9L0.9,8.8C-1,10.7,0.3,14,3.1,14H19C21.7,14,23,10.7,21.1,8.8z"/>
@@ -1177,7 +1207,6 @@ html, body {
             low-VOC, non-flammable and non-toxic.
         </p>
     </div>
-    <button class="button couch-button" onclick="openTooltip('couch')"><div class="button-center"></div></button>
     <div class="tooltip couch-tooltip" id="couch-tooltip">
         <svg width="22" height="12"viewBox="0 0 22 14">
             <path fill="#ffffff" d="M21.1,8.8l-7.9-7.9C12-0.3,10-0.3,8.8,0.9L0.9,8.8C-1,10.7,0.3,14,3.1,14H19C21.7,14,23,10.7,21.1,8.8z"/>
@@ -1190,7 +1219,6 @@ html, body {
             plastics sourced from the Mediterranean Sea. 
         </p>
     </div>
-    <button class="button table-button" onclick="openTooltip('table')"><div class="button-center"></div></button>
     <div class="tooltip table-tooltip" id="table-tooltip">
         <svg class="bottom-arrow" width="22" height="12"viewBox="0 0 22 14">
             <path fill="#ffffff" d="M21.1,8.8l-7.9-7.9C12-0.3,10-0.3,8.8,0.9L0.9,8.8C-1,10.7,0.3,14,3.1,14H19C21.7,14,23,10.7,21.1,8.8z"/>
@@ -1199,11 +1227,10 @@ html, body {
         <p>
             Designed by Tokujin Yoshioka for the Italian label Kartell is manufactured from just one single 
             "mold" using industrial casting. This product is made from the highly biocompatible and 100% recyclable
-                material PMMA (polymethyl methacrylate). Light and stable, the Invisible coffee table creates
-                an impeccable design through innovative production.
+              material PMMA (polymethyl methacrylate). Light and stable, the Invisible coffee table creates
+              an impeccable design through innovative production.
         </p>
     </div>
-    <button class="button floor-button" onclick="openTooltip('floor')"><div class="button-center"></div></button>
     <div class="tooltip floor-tooltip" id="floor-tooltip">
         <svg class="bottom-arrow" width="22" height="12"viewBox="0 0 22 14">
             <path fill="#ffffff" d="M21.1,8.8l-7.9-7.9C12-0.3,10-0.3,8.8,0.9L0.9,8.8C-1,10.7,0.3,14,3.1,14H19C21.7,14,23,10.7,21.1,8.8z"/>
@@ -1218,25 +1245,24 @@ html, body {
     </div>
 </div>
 <script>
-    $(function(){
-        $("#bauhaus-container").twentytwenty({
-            default_offset_pct: 0.5, // How much of the before image is visible when the page loads
-            orientation: 'horizontal', // Orientation of the before and after images ('horizontal' or 'vertical')
-            before_label: 'Before', // Set a custom before label
-            after_label: 'After', // Set a custom after label
-            no_overlay: true, //Do not show the overlay with before and after
-            move_slider_on_hover: false, // Move slider on mouse hover?
-            move_with_handle_only: true, // Allow a user to swipe anywhere on the image to control slider movement. 
-            click_to_move: false // Allow a user to click (or tap) anywhere on the image to move the slider to that location.
-        });
+    $("#bauhaus-container").twentytwenty({
+        default_offset_pct: 0.95, // How much of the before image is visible when the page loads
+        orientation: 'horizontal', // Orientation of the before and after images ('horizontal' or 'vertical')
+        before_label: 'Before', // Set a custom before label
+        after_label: 'After', // Set a custom after label
+        no_overlay: true, //Do not show the overlay with before and after
+        move_slider_on_hover: false, // Move slider on mouse hover?
+        move_with_handle_only: true, // Allow a user to swipe anywhere on the image to control slider movement. 
+        click_to_move: false // Allow a user to click (or tap) anywhere on the image to move the slider to that location.
     });
 
     function openTooltip(id) {
         $(".open").map((item, div) => {
-            if (div.id !== id + "-tooltip") {
+            if (div.id !== id + "-tooltip" && div.id !== id + "-button") {
                 div.classList.remove("open");
             }
         })
         $("#" + id + "-tooltip").toggleClass("open");
+        $("#" + id + "-button").toggleClass("open");
     }
 </script>
