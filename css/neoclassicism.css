@@ -1,0 +1,277 @@
+@font-face {
+    font-family: 'Squound';
+
+    src: url('../fonts/Squound-Regular.otf');
+
+    font-display: swap;
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Louis George Cafe';
+
+    src: url('../fonts/LouisGeorgeCafeLight.ttf');
+
+    font-display: swap;
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Louis George Cafe';
+
+    src: url('../fonts/LouisGeorgeCafe.ttf');
+
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Louis George Cafe';
+
+    src: url('../fonts/LouisGeorgeCafeBold.ttf');
+
+    font-display: swap;
+    font-style: normal;
+    font-weight: 600;
+}
+
+:root {
+    --orange: 232, 133, 97;
+    --blue: 108, 127, 191;
+    --yellow: 250, 230, 5;
+    --base-font-family: "Louis George Cafe", "Helvetica", "Arial", sans-serif;
+    --header-font-family: "Squound", "LouisGeorgeCafe", "Helvectica", "Arial", sans-serif;
+    --base-font-size: 18px;
+    --header-font-size: 50px;
+    --sub-header-font-size: 28px;
+    --sub-sub-header-font-size: 24px;
+    --large-button-font-size: 36px;
+    --medium-button-font-size: 28px;
+    --card-sub-heading-font-size: 20px;
+    --panelist-font-size: 20px;
+    --panelist-sub-heading-font-size: 14px;
+    --transition: all ease 0.3s !important;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+#neoclassicism-container {
+    max-width: 1242px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#neoclassicism-container > img {
+    max-width: 100%;
+}
+
+
+.narritive-title {
+    font-size: var(--header-font-size);
+    font-family: var(--header-font-family);
+    line-height: var(--header-font-size);
+    text-align: left;
+    color: black;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    max-width: 1242px;
+    width: 100%;
+}
+
+.narritive-description {
+    font-size: 20px;
+    font-family: var(--base-font-family);
+    line-height: 24px;
+    text-align: left;
+    color: black;
+    margin: 0 auto;
+    max-width: 1242px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.wall-button {
+    top: calc(55% - 10px);
+    left: calc(26% - 11px);
+}
+
+.chair-button {
+    top: calc(75% - 10px);
+    left: calc(59% - 11px);
+}
+
+.table-button {
+    top: calc(82% - 10px);
+    left: calc(84% - 11px);
+}
+
+.floor-button {
+    top: calc(95% - 10px);
+    left: calc(68% - 11px);
+}
+
+.ceiling-button {
+    top: calc(17% - 10px);
+    left: calc(50% - 11px);
+}
+
+.button {
+    position: absolute;
+    z-index: 11;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.5);
+    padding: 0;
+    margin: 0;
+    display: block;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+    box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.4);
+    transition: var(--transition);
+}
+
+.button.open {
+    border: 1px solid white!important;
+    background-color: white;
+    box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.8);
+}
+
+.button-center {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.button:hover {
+    border: 1px solid white;
+    box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.8);
+}
+
+.tooltip {
+    position: absolute;
+    box-sizing: border-box;
+    width: 500px;
+    background-color: white;
+    box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.4);
+    border-radius: 20px;
+    padding: 20px;
+    z-index: 12;
+    display: none;
+}
+
+.tooltip.open {
+    display: block;
+}
+
+.tooltip > h2 {
+    font-size: 20px;
+    font-family: var(--header-font-family);
+    line-height: 20px;
+    text-align: left;
+    color: black;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.tooltip > p {
+    font-size: 16px;
+    font-family: var(--base-font-family);
+    line-height: 18px;
+    text-align: left;
+    color: black;
+    margin: 0;
+}
+
+.tooltip > svg {
+    width: 22px;
+    height: 14px;
+    position: absolute;
+    top: -9px;
+    left: calc(50% - 11px);
+}
+
+.bottom-arrow {
+    bottom: -9px;
+    top: auto!important;
+    transform: scaleY(-1);
+}
+
+.right-arrow {
+    right: -13px;
+    top: calc(50% - 7px)!important;
+    left: auto!important;
+    transform: rotate(90deg);
+}
+
+.left-arrow {
+    top: calc(50% - 7px)!important;
+    left: -13px!important;
+    transform: rotate(-90deg);
+}
+
+.wall-tooltip {
+    top: calc(55% - 118.5px);
+    left: calc(26% + 50px);
+}
+
+.chair-tooltip {
+    bottom: calc(25% + 30px);
+    left: calc(59% - 250px);
+}
+
+.table-tooltip {
+    top: calc(82% - 91.5px);
+    left: calc(84% - 550px);
+}
+
+.floor-tooltip {
+    bottom: calc(5% + 30px);
+    left: calc(68% - 250px);
+}
+
+.ceiling-tooltip {
+    top: calc(17% + 30px);
+    left: calc(50% - 250px);
+}
+
+@media screen and (max-width: 1282px) {
+    .narritive-title, .narritive-description {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .tooltip {
+        width: 100%;
+        left: auto!important;
+        top: auto!important;
+        bottom: auto!important;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        height: auto;
+        position: relative;
+        box-shadow: none;
+    }
+    .bottom-arrow, .left-arrow, .right-arrow {
+        bottom: auto!important;
+        top: -9px!important;
+        left: calc(50% - 11px)!important;
+        transform: none;
+    }
+}
