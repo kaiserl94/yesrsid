@@ -186,15 +186,15 @@ const speakers = {
         "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fc0b7cda6ebe72da86_park.png"
     },
     "weinthal": {
-        "name": "Lois Weinthal",
+        "name": "Lois Weinthal (She/Her)",
         "company": "Ryerson University",
-        "bio": "",
+        "bio": "Lois Weinthal is Chair of the School of Interior Design at Ryerson University. Her research and practice investigate the relationship between architecture, interiors, clothing and objects, resulting in works that take on an experimental nature. She is the editor of Toward a New Interior: An Anthology of Interior Design Theory, co-editor of After Taste: Expanded Practice in Interior Design, and co-editor of the Handbook of Interior Architecture and Design. She studied at Cranbrook Academy of Art and the Rhode Island School of Design. She currently holds the position of Honorary Professor at the Glasgow School of Art.",
         "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fdfb08b497247552f6_weinthal.png"
     },
     "falzon": {
         "name": "Charles Falzon (He/Him)",
         "company": "Ryerson University",
-        "picture": "",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6080b79e0e9357ca3e010dc8_dean.png",
         "bio": "A leading educator and entrepreneur in the cultural industries, Charles is the Dean of FCAD, the Faculty of Communication and Design at Ryerson University, home to the country’s leading schools in media and creative industries. At Ryerson, Charles led the development of the three creative incubators, The Allan Slaight Radio Institute, the Transmedia Zone and Music Den. He was instrumental in the creation of several unique learning experiences including Canada’s first-ever degrees in Sport Media and Professional Music, as well as a creative practice Doctorate. He has instituted a number of impactful research and innovation centres and developed international hubs for FCAD in Dubai, Italy and the UK. As a Professor of Media Production, he specializes in executive production and media ethics.",
     },
     "kenny": {
@@ -355,13 +355,13 @@ const speakers = {
         "name": "Monica Polo (She/Her)",
         "company": "Ryerson University - Moderator",
         "bio": "As a former graduate of RSID, I returned, from 10yrs of practice, to be the Resource Specialist for the Design Centre. Material health, wellness and sustainable building are my passions and I hope to bring this need for clarity in our industry to the students of RSID. The hope is that we all inspire each to be sustainable responsible designers of our future.",
-        "picture": "",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6080b79eb2ff4b22bf48f202_polo.png",
     },
     "sicat": {
         "name": "John Sicat (He/Him)",
         "company": "Ryerson University - Moderator",
         "bio": "John Sicat is in his fourth year of study at Ryerson’s School of Interior Design. His experience in a wide range of extracurricular activities and design fabrication projects bring a unique perspective to his design work. John’s passion for fabrication and material study has led to a distinct experimental approach which emphasizes the iterative process and sensory affects within a designed space or artifact. His current interests lay in explorations of biomaterials and design that tackles underserved issues/communities through innovative methodologies. John hopes to further explore this relationship between materiality, place and time in his future design work.",
-        "picture": "",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6080b79dc02a02dc4b942427_sicat.png",
     },
 }
 
