@@ -146,17 +146,15 @@
                     vreLinks.wang,
                 ]
 
-                window.onload = () => {
-                    roomContainer = document.getElementById("room-container");
-                    image = document.getElementById("ref-img");
-                    maskedContainer = document.getElementById("masked-container");
-                    vreContainer = document.getElementById("vre-container");
-                    iframe = document.getElementById("vre-iframe");
-                    byLine = document.getElementById("by-line");
-                    iframe.src = vreData[count].url;
-                    byLine.innerHTML = `<span>BY</span></br>${vreData[count].name}`;
-                    resizeEverything();
-                }
+                roomContainer = document.getElementById("room-container");
+                image = document.getElementById("ref-img");
+                maskedContainer = document.getElementById("masked-container");
+                vreContainer = document.getElementById("vre-container");
+                iframe = document.getElementById("vre-iframe");
+                byLine = document.getElementById("by-line");
+                iframe.src = vreData[count].url;
+                byLine.innerHTML = `<span>BY</span></br>${vreData[count].name}`;
+                resizeEverything();
 
                 function resizeEverything() {
                     const newWidth = window.innerWidth > 1285 ? 1285 : window.innerWidth;
