@@ -152,11 +152,25 @@
                 vreContainer = document.getElementById("vre-container");
                 iframe = document.getElementById("vre-iframe");
                 byLine = document.getElementById("by-line");
-                iframe.src = vreData[count].url;
-                byLine.innerHTML = `<span>BY</span></br>${vreData[count].name}`;
                 resizeEverything();
 
                 function resizeEverything() {
+                    if (!roomContainer) {
+                        roomContainer = document.getElementById("room-container");
+                    }
+                    if (!image) {
+                        image = document.getElementById("ref-img");
+                    }
+                    if (!maskedContainer) {
+                        maskedContainer = document.getElementById("masked-container");
+                    }
+                    if (!vreContainer) {
+                        vreContainer = document.getElementById("vre-container");
+                    }
+                    if (!iframe) {
+                        iframe = document.getElementById("vre-iframe");
+                    }
+
                     const newWidth = window.innerWidth > 1285 ? 1285 : window.innerWidth;
                     const newHeight = newWidth * (1 / aspectRatio);
                     console.log(newWidth, newHeight);
@@ -181,6 +195,14 @@
                         count = 0;
                     }
 
+                    if (!iframe) {
+                        iframe = document.getElementById("vre-iframe");
+                    }
+
+                    if (!byLine) {
+                        byLine = document.getElementById("by-line");
+                    }
+
                     iframe.src = vreData[count].url;
                     byLine.innerHTML = `<span>BY</span></br>${vreData[count].name}`;
                 }
@@ -192,6 +214,14 @@
                         count = vreData.length - 1;
                     }
 
+                    if (!iframe) {
+                        iframe = document.getElementById("vre-iframe");
+                    }
+
+                    if (!byLine) {
+                        byLine = document.getElementById("by-line");
+                    }
+
                     iframe.src = vreData[count].url;
                     byLine.innerHTML = `<span>BY</span></br>${vreData[count].name}`;
                 }
@@ -200,9 +230,11 @@
                     resizeEverything();
                 }
             </script>
-            <iframe id="vre-iframe" class="vre-iframe" src="" scrolling="no" frameborder="0" allowfullscreen></iframe>
+            <iframe id="vre-iframe" class="vre-iframe"
+                src="https://vr.yulio.com/embedded/vres/YFDBnhD3G0/fprs/Fb6ZUcAHhj/?type=embed&show_nav=false&show_home=false&show_share=false&show_360=false&auto_pan=true"
+                scrolling="no" frameborder="0" allowfullscreen></iframe>
         </div>
-        <p class="by-line" id="by-line"><span>BY</span></br>Nicholas Burbano Diaz</p>
+        <p class="by-line" id="by-line"><span>BY</span></br>Shuning Xie</p>
     </div>
 
     <div class="button-controls">
