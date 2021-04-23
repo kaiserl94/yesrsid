@@ -172,7 +172,7 @@
                     }
 
                     console.log(roomContainer, image, maskedContainer, vreContainer, iframe);
-
+                    console.log(image.width, image.height);
                     const newWidth = window.innerWidth > 1285 ? 1285 : window.innerWidth;
                     const newHeight = newWidth * (1 / aspectRatio);
                     roomContainer.style.width = newWidth;
