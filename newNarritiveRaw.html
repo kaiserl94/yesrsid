@@ -83,16 +83,50 @@
         font-size: 18px;
         font-weight: 600;
         font-family: var(--base-font-family);
-        text-shadow: 0 1px 0px rgba(0, 0, 0, 0.4);
+        -webkit-filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.6))
     }
 
     .by-line>span {
         font-size: 14px;
         font-weight: 400;
     }
-</style>
 
+    .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #42455b;
+    }
+
+    .left-gradient {
+        height: 100%;
+        width: 15.4085%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-image: url("https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6083082456c848e88d644578_side-gradient.png");
+        background-size: 100%;
+        background-repeat: repeat-y;
+    }
+
+    .right-gradient {
+        height: 100%;
+        width: 15.4085%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-image: url("https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/608308232a7e62b1ecd719f7_right-side-gradient.png");
+        background-size: 100%;
+        background-repeat: repeat-y;
+    }
+</style>
+<div id="background" class="background"></div>
 <div id="room-container" class="room-container">
+    <div class="left-gradient"></div>
+    <div class="right-gradient"></div>
     <img id="ref-img" class="background-image"" src="
         https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6080c433ff98f668c535654c_Nassila_4th%20year%20room_FINAL%20RENDER%20(1).jpg"
         width="1285" height="905" />
@@ -146,6 +180,7 @@
                 let vreContainer = document.getElementById("vre-container");
                 let iframe = document.getElementById("vre-iframe");
                 let byLine = document.getElementById("by-line");
+                let background = document.getElementById("background");
                 resizeEverything();
 
                 function resizeEverything() {
@@ -165,10 +200,16 @@
                         iframe = document.getElementById("vre-iframe");
                     }
 
+                    if (!background) {
+                        background = document.getElementById("background");
+                    }
+
                     const newWidth = window.innerWidth > 1285 ? 1285 : window.innerWidth;
                     const newHeight = newWidth * (1 / aspectRatio);
                     roomContainer.style.width = newWidth + "px";
                     roomContainer.style.height = newHeight + "px";
+
+                    background.style.height = newHeight + "px";
 
                     const left = image.width * fromLeft;
                     const top = image.height * fromTop;

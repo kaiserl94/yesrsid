@@ -92,16 +92,50 @@
             font-size: 18px;
             font-weight: 600;
             font-family: var(--base-font-family);
-            text-shadow: 0 1px 0px rgba(0, 0, 0, 0.4);
+            -webkit-filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.6))
         }
 
         .by-line>span {
             font-size: 14px;
             font-weight: 400;
         }
-    </style>
 
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #42455b;
+        }
+
+        .left-gradient {
+            height: 100%;
+            width: 15.4085%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            background-image: url("https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6083082456c848e88d644578_side-gradient.png");
+            background-size: 100%;
+            background-repeat: repeat-y;
+        }
+
+        .right-gradient {
+            height: 100%;
+            width: 15.4085%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-image: url("https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/608308232a7e62b1ecd719f7_right-side-gradient.png");
+            background-size: 100%;
+            background-repeat: repeat-y;
+        }
+    </style>
+    <div id="background" class="background"></div>
     <div id="room-container" class="room-container">
+        <div class="left-gradient"></div>
+        <div class="right-gradient"></div>
         <img id="ref-img" class="background-image"" src="
             https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6080c433ff98f668c535654c_Nassila_4th%20year%20room_FINAL%20RENDER%20(1).jpg"
             width="1285" height="905" />
@@ -109,12 +143,6 @@
         <div id="masked-container" class="masked-container">
             <div id="vre-container" class="vre-container">
                 <script>
-                    let image;
-                    let vreContainer;
-                    let maskedContainer;
-                    let roomContainer;
-                    let iframe;
-                    let byLine;
 
                     const fromTop = 367 / 1550;
                     const fromLeft = 415 / 2200;
@@ -155,31 +183,51 @@
                         vreLinks.wang,
                     ]
 
-                    window.onload = () => {
-                        roomContainer = document.getElementById("room-container");
-                        image = document.getElementById("ref-img");
-                        maskedContainer = document.getElementById("masked-container");
-                        vreContainer = document.getElementById("vre-container");
-                        iframe = document.getElementById("vre-iframe");
-                        byLine = document.getElementById("by-line");
-                        iframe.src = vreData[count].url;
-                        byLine.innerHTML = `<span>BY</span></br>${vreData[count].name}`;
-                        resizeEverything();
-                    }
+                    let roomContainer = document.getElementById("room-container");
+                    let image = document.getElementById("ref-img");
+                    let maskedContainer = document.getElementById("masked-container");
+                    let vreContainer = document.getElementById("vre-container");
+                    let iframe = document.getElementById("vre-iframe");
+                    let byLine = document.getElementById("by-line");
+                    let background = document.getElementById("background");
+                    resizeEverything();
 
                     function resizeEverything() {
+                        if (!roomContainer) {
+                            roomContainer = document.getElementById("room-container");
+                        }
+                        if (!image) {
+                            image = document.getElementById("ref-img");
+                        }
+                        if (!maskedContainer) {
+                            maskedContainer = document.getElementById("masked-container");
+                        }
+                        if (!vreContainer) {
+                            vreContainer = document.getElementById("vre-container");
+                        }
+                        if (!iframe) {
+                            iframe = document.getElementById("vre-iframe");
+                        }
+
+                        if (!background) {
+                            background = document.getElementById("background");
+                        }
+
                         const newWidth = window.innerWidth > 1285 ? 1285 : window.innerWidth;
                         const newHeight = newWidth * (1 / aspectRatio);
-                        console.log(newWidth, newHeight);
-                        roomContainer.style.width = newWidth;
-                        roomContainer.style.height = newHeight;
+                        roomContainer.style.width = newWidth + "px";
+                        roomContainer.style.height = newHeight + "px";
 
-                        const left = image.width * fromLeft
+                        background.style.height = newHeight + "px";
+
+                        const left = image.width * fromLeft;
                         const top = image.height * fromTop;
-                        maskedContainer.style.width = image.width * (1 - fromLeft - fromRight);
-                        maskedContainer.style.height = image.height * (1 - fromTop - fromBottom);
+                        maskedContainer.style.width = image.width * (1 - fromLeft - fromRight) + "px";
+                        maskedContainer.style.height = image.height * (1 - fromTop - fromBottom) + "px";
                         maskedContainer.style.top = top + "px";
                         maskedContainer.style.left = left + "px";
+
+                        console.log(image.width, image.height, fromTop, fromLeft, fromBottom, fromRight, left, top, newWidth, newHeight);
 
                         const scale = image.width / vreContainer.clientWidth;
                         vreContainer.style.transform = `translate3d(-${left}px, -${top}px, 0px) scale(${scale})`;
@@ -190,6 +238,14 @@
 
                         if (count === vreData.length) {
                             count = 0;
+                        }
+
+                        if (!iframe) {
+                            iframe = document.getElementById("vre-iframe");
+                        }
+
+                        if (!byLine) {
+                            byLine = document.getElementById("by-line");
                         }
 
                         iframe.src = vreData[count].url;
@@ -203,6 +259,14 @@
                             count = vreData.length - 1;
                         }
 
+                        if (!iframe) {
+                            iframe = document.getElementById("vre-iframe");
+                        }
+
+                        if (!byLine) {
+                            byLine = document.getElementById("by-line");
+                        }
+
                         iframe.src = vreData[count].url;
                         byLine.innerHTML = `<span>BY</span></br>${vreData[count].name}`;
                     }
@@ -211,10 +275,11 @@
                         resizeEverything();
                     }
                 </script>
-                <iframe id="vre-iframe" class="vre-iframe" src="" scrolling="no" frameborder="0"
-                    allowfullscreen></iframe>
+                <iframe id="vre-iframe" class="vre-iframe"
+                    src="https://vr.yulio.com/embedded/vres/YFDBnhD3G0/fprs/Fb6ZUcAHhj/?type=embed&show_nav=false&show_home=false&show_share=false&show_360=false&auto_pan=true"
+                    scrolling="no" frameborder="0" allowfullscreen></iframe>
             </div>
-            <p class="by-line" id="by-line"><span>BY</span></br>Nicholas Burbano Diaz</p>
+            <p class="by-line" id="by-line"><span>BY</span></br>Shuning Xie</p>
         </div>
 
         <div class="button-controls">
