@@ -171,9 +171,10 @@
                         iframe = document.getElementById("vre-iframe");
                     }
 
+                    console.log(roomContainer, image, maskedContainer, vreContainer, iframe);
+
                     const newWidth = window.innerWidth > 1285 ? 1285 : window.innerWidth;
                     const newHeight = newWidth * (1 / aspectRatio);
-                    console.log(newWidth, newHeight);
                     roomContainer.style.width = newWidth;
                     roomContainer.style.height = newHeight;
 
