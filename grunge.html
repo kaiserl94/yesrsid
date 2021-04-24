@@ -1,0 +1,166 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body style="background-color: black; margin: 0; padding: 0;">
+    <style>
+        @font-face {
+            font-family: 'Shadows Into Light';
+
+            src: url('./fonts/ShadowsIntoLight-Regular.ttf');
+
+            font-display: swap;
+            font-style: normal;
+            font-weight: 300;
+        }
+
+        :root {
+            --base-font-family: "Shadows Into Light", "Helvetica", "Arial", sans-serif;
+        }
+
+        .room-container {
+            margin: 0 auto;
+            max-width: 100%;
+            max-height: 100vh;
+            position: relative;
+        }
+
+        .background-image {
+            max-width: 100%;
+            max-height: 100vh;
+            height: auto;
+            display: block;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #445b5d;
+        }
+
+        .video {
+            width: 525px;
+            height: 394px;
+            position: absolute;
+            transform-origin: top left;
+            top: 0;
+            left: 0;
+        }
+
+        .video-list {
+            position: absolute;
+            top: 9.8%;
+            right: 3.5%;
+            width: 25%;
+        }
+
+        .video-list>button {
+            background: transparent;
+            outline: 0;
+            border: 0;
+            font-size: 24px;
+            text-align: left;
+            display: block;
+            width: 100%;
+            cursor: pointer;
+            font-family: var(--base-font-family);
+        }
+
+        .video-list>button:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <div id="background" class="background"></div>
+    <div id="room-container" class="room-container">
+        <img id="ref-img" class="background-image"
+            src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/60846e39fcf69458ae149806_grunge.jpg"
+            width="1285" height="905" />
+        <iframe id="iframe" class="video" src="https://www.youtube.com/embed/4Skc3YjeTFU" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+        <div class="video-list">
+            <button onclick="switchToVideo(0)">Video 1</button>
+            <button onclick="switchToVideo(1)">Video 2</button>
+        </div>
+        <script>
+            const fromTop = 173 / 905;
+            const fromLeft = 283 / 1285;
+            const fromRight = 477 / 1285;
+            const fromBottom = 338 / 905;
+
+            const aspectRatio = 1285 / 905;
+
+            const videoLinks = {
+                "one": {
+                    "name": "name 1",
+                    "url": "https://www.youtube.com/embed/4Skc3YjeTFU",
+                },
+                "two": {
+                    "name": "name 2",
+                    "url": "https://www.youtube.com/embed/IPd86vcx6bk",
+                },
+            };
+            let count = 0;
+
+            const videoData = [
+                videoLinks.one,
+                videoLinks.two,
+            ]
+
+            let roomContainer = document.getElementById("room-container");
+            let image = document.getElementById("ref-img");
+            let iframe = document.getElementById("iframe");
+            let background = document.getElementById("background");
+            resizeEverything();
+
+            function resizeEverything() {
+                if (!roomContainer) {
+                    roomContainer = document.getElementById("room-container");
+                }
+                if (!image) {
+                    image = document.getElementById("ref-img");
+                }
+                if (!iframe) {
+                    iframe = document.getElementById("iframe");
+                }
+
+                if (!background) {
+                    background = document.getElementById("background");
+                }
+
+                const newWidth = window.innerWidth > 1285 ? 1285 : window.innerWidth;
+                const newHeight = newWidth * (1 / aspectRatio);
+                roomContainer.style.width = newWidth + "px";
+                roomContainer.style.height = newHeight + "px";
+
+                background.style.height = newHeight + "px";
+
+                const left = image.width * fromLeft;
+                const top = image.height * fromTop;
+
+                const scale = image.width / 1285;
+                iframe.style.transform = `translate3d(${left}px, ${top}px, 0px) scale(${scale})`;
+            }
+
+            function switchToVideo(number) {
+                iframe.src = videoData[number].url;
+            }
+
+            window.onresize = () => {
+                resizeEverything();
+            }
+        </script>
+
+    </div>
+    </div>
+</body>
+
+</html>

@@ -260,8 +260,6 @@
                     maskedContainer.style.top = top + "px";
                     maskedContainer.style.left = left + "px";
 
-                    console.log(image.width, image.height, fromTop, fromLeft, fromBottom, fromRight, left, top, newWidth, newHeight);
-
                     const scale = image.width / vreContainer.clientWidth;
                     vreContainer.style.transform = `translate3d(-${left}px, -${top}px, 0px) scale(${scale})`;
                 }
