@@ -15,13 +15,11 @@
         .room-container {
             margin: 0 auto;
             max-width: 100%;
-            max-height: 100vh;
             position: relative;
         }
 
         .background-image {
             max-width: 100%;
-            max-height: 100vh;
             height: auto;
             display: block;
         }
@@ -102,7 +100,7 @@
 
         .background {
             position: absolute;
-            top: 0;
+            top: 101px;
             left: 0;
             width: 100%;
             background-color: #42455b;
@@ -130,6 +128,50 @@
             background-image: url("https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/608308232a7e62b1ecd719f7_right-side-gradient.png");
             background-size: 100%;
             background-repeat: repeat-y;
+        }
+
+        @media screen and (max-width: 990px) {
+            .button-controls {
+                right: 15%;
+                bottom: 30%;
+            }
+        }
+
+        @media screen and (max-width: 830px) {
+            .button-controls {
+                right: 17%;
+                bottom: 31%;
+            }
+
+            .prev-button,
+            .next-button {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            .button-controls {
+                right: 15.5%;
+                bottom: 30%;
+            }
+        }
+
+        @media screen and (max-width: 630px) {
+            .button-controls {
+                right: 10px;
+                bottom: 10px;
+            }
+
+            .prev-button,
+            .next-button {
+                width: 40px;
+                height: 40px;
+            }
+
+            .by-line {
+                display: none;
+            }
         }
     </style>
     <div id="background" class="background"></div>
@@ -213,7 +255,7 @@
                             background = document.getElementById("background");
                         }
 
-                        const newWidth = window.innerWidth > 1285 ? 1285 : window.innerWidth;
+                        const newWidth = document.body.clientWidth > 1285 ? 1285 : document.body.clientWidth;
                         const newHeight = newWidth * (1 / aspectRatio);
                         roomContainer.style.width = newWidth + "px";
                         roomContainer.style.height = newHeight + "px";
@@ -226,8 +268,6 @@
                         maskedContainer.style.height = image.height * (1 - fromTop - fromBottom) + "px";
                         maskedContainer.style.top = top + "px";
                         maskedContainer.style.left = left + "px";
-
-                        console.log(image.width, image.height, fromTop, fromLeft, fromBottom, fromRight, left, top, newWidth, newHeight);
 
                         const scale = image.width / vreContainer.clientWidth;
                         vreContainer.style.transform = `translate3d(-${left}px, -${top}px, 0px) scale(${scale})`;
