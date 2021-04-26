@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:Software Tutorials: Revit\, Sketchup\, and After Effects\nDate and Time - May 8\, 2021 1:00 PM to 2:00 PM\nVenue - yesrsid.com\nRyerson School of Interior Design's Year End Show 2021: Re-Vision\n
+DTSTART:20210508T170000Z
+DTEND:20210508T180000Z
+LOCATION:yesrsid.com
+SUMMARY;LANGUAGE=en-us:Software Tutorials: Revit, Sketchup, and After Effects
+END:VEVENT
+END:VCALENDAR

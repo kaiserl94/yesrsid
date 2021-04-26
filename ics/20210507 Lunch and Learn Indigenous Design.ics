@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:Lunch and Learn: Indigenous Design\nDate and Time - May 7\, 2021 12:00 PM to 12:45 PM\nVenue - yesrsid.com\nRyerson School of Interior Design's Year End Show 2021: Re-Vision\n
+DTSTART:20210507T160000Z
+DTEND:20210507T164500Z
+LOCATION:yesrsid.com
+SUMMARY;LANGUAGE=en-us:Lunch and Learn: Indigenous Design
+END:VEVENT
+END:VCALENDAR

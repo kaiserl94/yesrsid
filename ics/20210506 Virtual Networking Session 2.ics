@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:Virtual Networking\nDate and Time - May 6\, 2021 6:00 PM to 7:00 PM\nVenue - yesrsid.com\nRyerson School of Interior Design's Year End Show 2021: Re-Vision\n
+DTSTART:20210506T220000Z
+DTEND:20210506T230000Z
+LOCATION:yesrsid.com
+SUMMARY;LANGUAGE=en-us:Virtual Networking
+END:VEVENT
+END:VCALENDAR
