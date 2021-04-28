@@ -1,6 +1,6 @@
 <style>
     :root {
-        --base-font-family: "Shadows Into Light", "Helvetica", "Arial", sans-serif;
+        --base-font-family: "Takota", "Helvetica", "Arial", sans-serif;
     }
 
     .room-container {
@@ -36,19 +36,23 @@
 
     .video-list {
         position: absolute;
-        top: 9.8%;
-        right: 3.5%;
-        width: 25%;
-        background-image: url("./images/urban-fab-menu.png");
+        top: calc(50% - 23.4%);
+        padding-top: 133px;
+        right: 0;
+        width: 20.6%;
+        height: 46.8%;
+        background-image: url("https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6089f14fbb2572c67264e642_urban-fab-menu.png");
         background-size: 100%;
+        background-repeat: no-repeat;
     }
 
     .video-list>button {
         background: transparent;
+        color: #2e6fff;
         outline: 0;
         border: 0;
-        padding-left: 20px;
-        font-size: 36px;
+        padding-left: 28px;
+        font-size: 24px;
         text-align: left;
         display: block;
         width: 100%;
@@ -58,6 +62,163 @@
 
     .video-list>button:hover {
         text-decoration: underline;
+    }
+
+    .mobile-video-list {
+        display: none;
+        padding-top: 280px;
+        margin: 0 auto;
+        width: 100% !important;
+        max-width: 546px !important;
+        height: 100vh !important;
+        background-image: url("https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6089f14fbb2572c67264e642_urban-fab-menu.png");
+        background-size: 100%;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+
+    .mobile-video-list>a {
+        background: transparent;
+        color: #2e6fff;
+        outline: 0;
+        border: 0;
+        padding-left: 64px;
+        font-size: 42px;
+        line-height: 70px;
+        text-align: left;
+        display: block;
+        width: 100%;
+        cursor: pointer;
+        font-family: var(--base-font-family);
+        text-decoration: none;
+    }
+
+    .mobile-video-list>a:hover {
+        text-decoration: underline;
+    }
+
+    @media screen and (max-width: 1300px) {
+        .video-list>button {
+            font-size: 24px;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        .video-list {
+            padding-top: 115px;
+        }
+
+        .video-list>button {
+            font-size: 20px;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        .video-list {
+            padding-top: 100px;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        .video-list {
+            padding-top: 0px;
+            position: relative;
+            width: 100% !important;
+            max-width: 546px !important;
+            height: 100vh !important;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            background-image: url("https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6089f1505b8967f955939347_urban-fab-mobile.png");
+        }
+
+        .video-list>button {
+            display: none;
+        }
+
+        .background-image,
+        .background,
+        .video {
+            display: none;
+        }
+
+        .mobile-video-list {
+            display: block;
+        }
+
+        .room-container {
+            width: 100% !important;
+            height: 100vh !important;
+            background-image: url("https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6089f16a631b07328e1fa1a4_urban-fab-mobile-background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow-x: hidden;
+        }
+    }
+
+    @media screen and (max-width: 546px) {
+        .video-list {
+            background-image: none;
+        }
+
+        .mobile-video-list>a {
+            font-size: 36px;
+            line-height: 60px;
+        }
+    }
+
+    @media screen and (max-width: 546px) {
+        .mobile-video-list {
+            padding-top: 230px;
+        }
+
+        .mobile-video-list>a {
+            font-size: 32px;
+        }
+    }
+
+    @media screen and (max-width: 460px) {
+        .mobile-video-list>a {
+            font-size: 28px;
+            line-height: 45px;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .mobile-video-list {
+            padding-top: 190px;
+        }
+
+        .mobile-video-list>a {
+            padding-left: 40px;
+            font-size: 24px;
+            line-height: 40px;
+        }
+    }
+
+    @media screen and (max-width: 350px) {
+        .mobile-video-list {
+            padding-top: 166px;
+        }
+
+        .mobile-video-list>a {
+            padding-left: 40px;
+            font-size: 24px;
+            line-height: 40px;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        .mobile-video-list {
+            padding-top: 155px;
+        }
+
+        .mobile-video-list>a {
+            padding-left: 40px;
+            font-size: 24px;
+            line-height: 40px;
+        }
     }
 </style>
 <div id="background" class="background"></div>
@@ -77,6 +238,16 @@
         <button onclick="switchToVideo(4)">Yihanna Sun</button>
         <button onclick="switchToVideo(5)">Celeste Lava</button>
         <button onclick="switchToVideo(6)">Marilou Vaillancourt</button>
+
+        <div class="mobile-video-list">
+            <a href="https://www.youtube.com/watch?v=eHc-vRO9nPM" target="_blank">Diane Lin</a>
+            <a href="https://www.youtube.com/watch?v=n6n5r8UlN9U" target="_blank">Minseo Ji</a>
+            <a href="https://www.youtube.com/watch?v=eMMmgLP7kCc" target="_blank">Thuc Tam Bui</a>
+            <a href="https://www.youtube.com/watch?v=mO8THbvgkmc" target="_blank">Elham Morshedi</a>
+            <a href="https://www.youtube.com/watch?v=0NAbF_D2GdY" target="_blank">Yihanna Sun</a>
+            <a href="https://www.youtube.com/watch?v=6XdNaUOTSIU" target="_blank">Celeste Lava</a>
+            <a href="https://www.youtube.com/watch?v=UUpfIkENk7I" target="_blank">Marilou Vaillancourt</a>
+        </div>
     </div>
     <script>
         const fromTop = 242 / 905;
