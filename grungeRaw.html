@@ -62,13 +62,18 @@
     <img id="ref-img" class="background-image"
         src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/60846e39fcf69458ae149806_grunge.jpg" width="1285"
         height="905" />
-    <iframe id="iframe" class="video" src="https://www.youtube.com/embed/4Skc3YjeTFU" title="YouTube video player"
+    <iframe id="iframe" class="video" src="https://www.youtube.com/embed/eHc-vRO9nPM" title="YouTube video player"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
 
     <div class="video-list">
-        <button onclick="switchToVideo(0)">Video 1</button>
-        <button onclick="switchToVideo(1)">Video 2</button>
+        <button onclick="switchToVideo(0)">Diane Lin</button>
+        <button onclick="switchToVideo(1)">Pansy Wong</button>
+        <button onclick="switchToVideo(2)">Jackie Ly</button>
+        <button onclick="switchToVideo(3)">Nassila Oudahmane</button>
+        <button onclick="switchToVideo(4)">Julia Jaynes</button>
+        <button onclick="switchToVideo(5)">Nehaa Rahman</button>
+        <button onclick="switchToVideo(6)">Diana Ronin</button>
     </div>
     <script>
         const fromTop = 173 / 905;
@@ -80,12 +85,32 @@
 
         const videoLinks = {
             "one": {
-                "name": "name 1",
-                "url": "https://www.youtube.com/embed/4Skc3YjeTFU",
+                "name": "Diane Lin",
+                "url": "https://www.youtube.com/embed/eHc-vRO9nPM",
             },
             "two": {
-                "name": "name 2",
-                "url": "https://www.youtube.com/embed/IPd86vcx6bk",
+                "name": "Pansy Wong",
+                "url": "https://www.youtube.com/embed/-ieQtJxfLlo",
+            },
+            "three": {
+                "name": "Jackie Ly",
+                "url": "https://www.youtube.com/embed/IlY2WadkyTU",
+            },
+            "four": {
+                "name": "Nassila Oudahmane",
+                "url": "https://www.youtube.com/embed/K_dN-_8TD1U",
+            },
+            "five": {
+                "name": "Julia Jaynes",
+                "url": "https://www.youtube.com/embed/1JIt953eOH0",
+            },
+            "six": {
+                "name": "Nehaa Rahman",
+                "url": "https://www.youtube.com/embed/JSiO41L_ctI",
+            },
+            "seven": {
+                "name": "Diana Ronin",
+                "url": "https://www.youtube.com/embed/Mb4hdhY11T4",
             },
         };
         let count = 0;
@@ -93,6 +118,11 @@
         const videoData = [
             videoLinks.one,
             videoLinks.two,
+            videoLinks.three,
+            videoLinks.four,
+            videoLinks.five,
+            videoLinks.six,
+            videoLinks.seven,
         ]
 
         let roomContainer = document.getElementById("room-container");
