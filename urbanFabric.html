@@ -9,9 +9,9 @@
 <body style="background-color: black; margin: 0; padding: 0;">
     <style>
         @font-face {
-            font-family: 'Shadows Into Light';
+            font-family: 'Takota';
 
-            src: url('./fonts/ShadowsIntoLight-Regular.ttf');
+            src: url('./fonts/Takota.ttf');
 
             font-display: swap;
             font-style: normal;
@@ -19,7 +19,7 @@
         }
 
         :root {
-            --base-font-family: "Shadows Into Light", "Helvetica", "Arial", sans-serif;
+            --base-font-family: "Takota", "Helvetica", "Arial", sans-serif;
         }
 
         .room-container {
@@ -55,16 +55,23 @@
 
         .video-list {
             position: absolute;
-            top: 9.8%;
-            right: 3.5%;
-            width: 25%;
+            top: calc(50% - 23.4%);
+            padding-top: 133px;
+            right: 0;
+            width: 20.6%;
+            height: 46.8%;
+            background-image: url("./images/urban-fab-menu.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
         }
 
         .video-list>button {
             background: transparent;
+            color: #2e6fff;
             outline: 0;
             border: 0;
-            font-size: 24px;
+            padding-left: 28px;
+            font-size: 28px;
             text-align: left;
             display: block;
             width: 100%;
