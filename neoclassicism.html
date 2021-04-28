@@ -1,105 +1,126 @@
-  
 <html>
-    <head>
-        <meta charset="utf-8"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="js/jquery.event.move.js" type="text/javascript"></script>
-        <script src="js/jquery.twentytwenty.js" type="text/javascript"></script>
-        <link rel="stylesheet" href="css/twentytwenty.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="css/neoclassicism.css" type="text/css" media="screen" />
-    </head>
-    <body>
-        <h1 class="narritive-title">Neoclassicism</h1>
-        <p class="narritive-description">
-            The re-imagining of the Neoclassic style puts emphasis on a care for nature and the health of the 
-            people who will use the space. It replaces many of the materials with newly created sustainable ones 
-            and embraces the use of highly recyclable metals which have limited impact on nature and newly 
-            extended durability.
-        </p>
-        <div style="position: relative;max-width: 1242px;width: 100%;margin: 0 auto;">
-            <div id="neoclassicism-container" class="twentytweny-container">
-                <img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/607c99a3b5ecc185c1410f41_neoclassicism-original.png"/>
-                <img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/607c99a27d4164724165f60e_neoclassicism.png"/>
-                <button id="ceiling-button" class="button ceiling-button" onclick="openTooltip('ceiling')"><div class="button-center"></div></button>
-                <button id="chair-button" class="button chair-button" onclick="openTooltip('chair')"><div class="button-center"></div></button>
-                <button id="table-button" class="button table-button" onclick="openTooltip('table')"><div class="button-center"></div></button>
-                <button id="floor-button" class="button floor-button" onclick="openTooltip('floor')"><div class="button-center"></div></button>
-                <button id="wall-button" class="button wall-button" onclick="openTooltip('wall')"><div class="button-center"></div></button>
-            </div>
-            <div class="tooltip ceiling-tooltip" id="ceiling-tooltip">
-                <svg width="22" height="12"viewBox="0 0 22 14">
-                    <path fill="#ffffff" d="M21.1,8.8l-7.9-7.9C12-0.3,10-0.3,8.8,0.9L0.9,8.8C-1,10.7,0.3,14,3.1,14H19C21.7,14,23,10.7,21.1,8.8z"/>
-                </svg>
-                <h2>The CALLA Panels</h2>
-                <p>
-                    Designed by Armstrong World Industries meet the most stringent sustainability compliance 
-                    standards today. They are a USDA Certified Biobased Product – 91% and can be recycled through the
-                    Armstrong Ceilings Recycling Program.</br></br>
-                    Armstrong World Industries are committed to developing new and sustainable ceiling solutions, 
-                    with design and performance possibilities that make a positive difference.
-                </p>
-            </div>
-            <div class="tooltip chair-tooltip" id="chair-tooltip">
-                <svg class="bottom-arrow" width="22" height="12"viewBox="0 0 22 14">
-                    <path fill="#ffffff" d="M21.1,8.8l-7.9-7.9C12-0.3,10-0.3,8.8,0.9L0.9,8.8C-1,10.7,0.3,14,3.1,14H19C21.7,14,23,10.7,21.1,8.8z"/>
-                </svg>
-                <h2>The Chee Chair</h2>
-                <p>
-                    A bent steel rod and wire chair by designer Tom Fereday. 
-                    Steel can be recycled an infinite number of times and be reused with no downgrading 
-                    in quality, minimizing the need for additional raw materials. Zinc-rich primers have 
-                    been used to protect carbon steel from corrosion. With the development of technology 
-                    zinc primers can now be applied as thicker films, which provide even better protection 
-                    for the lifespan of the steel structure.
-                </p>
-            </div>
-            <div class="tooltip table-tooltip" id="table-tooltip">
-                <svg class="right-arrow" width="22" height="12"viewBox="0 0 22 14">
-                    <path fill="#ffffff" d="M21.1,8.8l-7.9-7.9C12-0.3,10-0.3,8.8,0.9L0.9,8.8C-1,10.7,0.3,14,3.1,14H19C21.7,14,23,10.7,21.1,8.8z"/>
-                </svg>
-                <h2>Dune Formation Table</h2>
-                <p>
-                    This table is part of the Dune Formation installation by Zaha Hadid Architects. 
-                    The sinuous shape is a result of the combination of metal and resins with advanced 
-                    3D modelling techniques and the processes of digital production. The resins used 
-                    in the process are a naturally-occurring organic compound that is sourced from 
-                    plants and is 100% recyclable. 
-                </p>
-            </div>
-            <div class="tooltip floor-tooltip" id="floor-tooltip">
-                <svg class="bottom-arrow" width="22" height="12"viewBox="0 0 22 14">
-                    <path fill="#ffffff" d="M21.1,8.8l-7.9-7.9C12-0.3,10-0.3,8.8,0.9L0.9,8.8C-1,10.7,0.3,14,3.1,14H19C21.7,14,23,10.7,21.1,8.8z"/>
-                </svg>
-                <h2>Bolon Emerge Collection Floor</h2>
-                <p>
-                    The floor is part of Bolon’s Emerge collection which enjoys a reputation for consisting 
-                    of extremely durable products with lengthy useful lifespans. It consists of 39% calcium 
-                    carbonate, 37% PVC, 18% plasticisers, 2% fibreglass and 2% stabilisers and 1% pigment. 
-                    Bollon’s plastic raw material, PVC, is made of 57% salt and 43% oil that, via chemical 
-                    processes, forms a polymer. The result is a durable plastic that is free from harmful 
-                    chemicals. The unique polymer structure makes the PVC 100% recyclable multiple times 
-                    after its long useful life.
-                </p>
-            </div>
-            <div class="tooltip wall-tooltip" id="wall-tooltip">
-                <svg class="left-arrow" width="22" height="12"viewBox="0 0 22 14">
-                    <path fill="#ffffff" d="M21.1,8.8l-7.9-7.9C12-0.3,10-0.3,8.8,0.9L0.9,8.8C-1,10.7,0.3,14,3.1,14H19C21.7,14,23,10.7,21.1,8.8z"/>
-                </svg>
-                <h2>Nazca Unpasted Wallpaper</h2>
-                <p>
-                    Designed by York Wallcovering Studio. York offers eco-friendly wallpapers made with 
-                    natural materials such as leaves, sand, grass, recycled glass beads, nacre and cork. 
-                    The use of 100% natural fibres makes the products breathable. They use a smoke-free ink 
-                    system so efficient that it eliminates the need for emission controls, and apply 
-                    water-based coatings for durability. Nazca Unpasted Wallpaper is made of a non-woven 
-                    material crafted from cellulose and textile fibres. They are vapour-permeable and 
-                    regulate moisture, minimizing the risk of mold or mildew.
-                </p>
-            </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/jquery.event.move.js" type="text/javascript"></script>
+    <script src="js/jquery.twentytwenty.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/twentytwenty.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/neoclassicism.css" type="text/css" media="screen" />
+</head>
+
+<body>
+    <h1 class="narritive-title">Neoclassicism</h1>
+    <p class="narritive-description">
+        The re-imagining of the Neoclassic style puts emphasis on a care for nature and the health of the
+        people who will use the space. It replaces many of the materials with newly created sustainable ones
+        and embraces the use of highly recyclable metals which have limited impact on nature and newly
+        extended durability.
+    </p>
+    <div style="position: relative;max-width: 1242px;width: 100%;margin: 0 auto;">
+        <div id="neoclassicism-container" class="twentytweny-container">
+            <img
+                src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/607c99a3b5ecc185c1410f41_neoclassicism-original.png" />
+            <img
+                src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/607c99a27d4164724165f60e_neoclassicism.png" />
+            <button id="ceiling-button" class="button ceiling-button" onclick="openTooltip('ceiling')">
+                <div class="button-center"></div>
+            </button>
+            <button id="chair-button" class="button chair-button" onclick="openTooltip('chair')">
+                <div class="button-center"></div>
+            </button>
+            <button id="table-button" class="button table-button" onclick="openTooltip('table')">
+                <div class="button-center"></div>
+            </button>
+            <button id="floor-button" class="button floor-button" onclick="openTooltip('floor')">
+                <div class="button-center"></div>
+            </button>
+            <button id="wall-button" class="button wall-button" onclick="openTooltip('wall')">
+                <div class="button-center"></div>
+            </button>
         </div>
-        <script>
-            setTimeout(()=> {
-                $("#neoclassicism-container").twentytwenty({
+        <div class="tooltip ceiling-tooltip" id="ceiling-tooltip">
+            <svg width="22" height="12" viewBox="0 0 22 14">
+                <path fill="#ffffff"
+                    d="M21.1,8.8l-7.9-7.9C12-0.3,10-0.3,8.8,0.9L0.9,8.8C-1,10.7,0.3,14,3.1,14H19C21.7,14,23,10.7,21.1,8.8z" />
+            </svg>
+            <h2>Mineral Fiber</h2>
+            <p>
+                The CALLA Panels by Armstrong World Industries meet the most stringent sustainability compliance
+                standards today. They are a USDA Certified Biobased Product – 91% and can be recycled through the
+                Armstrong Ceilings Recycling Program.</br></br>
+                Armstrong World Industries are committed to developing new and sustainable ceiling solutions,
+                with design and performance possibilities that make a positive difference.
+            </p>
+        </div>
+        <div class="tooltip chair-tooltip" id="chair-tooltip">
+            <svg class="bottom-arrow" width="22" height="12" viewBox="0 0 22 14">
+                <path fill="#ffffff"
+                    d="M21.1,8.8l-7.9-7.9C12-0.3,10-0.3,8.8,0.9L0.9,8.8C-1,10.7,0.3,14,3.1,14H19C21.7,14,23,10.7,21.1,8.8z" />
+            </svg>
+            <h2>Steel</h2>
+            <p>
+                The Chee Chair is a bent steel rod and wire chair by designer Tom Fereday.
+                Steel can be recycled an infinite number of times and be reused with no downgrading
+                in quality, minimizing the need for additional raw materials. Zinc-rich primers have
+                been used to protect carbon steel from corrosion. With the development of technology
+                zinc primers can now be applied as thicker films, which provide even better protection
+                for the lifespan of the steel structure.
+            </p>
+        </div>
+        <div class="tooltip table-tooltip" id="table-tooltip">
+            <svg class="right-arrow" width="22" height="12" viewBox="0 0 22 14">
+                <path fill="#ffffff"
+                    d="M21.1,8.8l-7.9-7.9C12-0.3,10-0.3,8.8,0.9L0.9,8.8C-1,10.7,0.3,14,3.1,14H19C21.7,14,23,10.7,21.1,8.8z" />
+            </svg>
+            <h2>Metal, Resins and 3D Modelling</h2>
+            <p>
+                This table is part of the Dune Formation installation by Zaha Hadid Architects.
+                The sinuous shape is a result of the combination of metal and resins with advanced
+                3D modelling techniques and the processes of digital production. The resins used
+                in the process are a naturally-occurring organic compound that is sourced from
+                plants and is 100% recyclable.
+            </p>
+        </div>
+        <div class="tooltip floor-tooltip" id="floor-tooltip">
+            <svg class="bottom-arrow" width="22" height="12" viewBox="0 0 22 14">
+                <path fill="#ffffff"
+                    d="M21.1,8.8l-7.9-7.9C12-0.3,10-0.3,8.8,0.9L0.9,8.8C-1,10.7,0.3,14,3.1,14H19C21.7,14,23,10.7,21.1,8.8z" />
+            </svg>
+            <h2>Woven Vinyl</h2>
+            <p>
+                The floor is part of Bolon’s Emerge collection which enjoys a reputation for consisting
+                of extremely durable products with lengthy useful lifespans. It consists of 39% calcium
+                carbonate, 37% PVC, 18% plasticisers, 2% fibreglass and 2% stabilisers and 1% pigment.
+                Bollon’s plastic raw material, PVC, is made of 57% salt and 43% oil that, via chemical
+                processes, forms a polymer. The result is a durable plastic that is free from harmful
+                chemicals. The unique polymer structure makes the PVC 100% recyclable multiple times
+                after its long useful life.
+            </p>
+        </div>
+        <div class="tooltip wall-tooltip" id="wall-tooltip">
+            <svg class="left-arrow" width="22" height="12" viewBox="0 0 22 14">
+                <path fill="#ffffff"
+                    d="M21.1,8.8l-7.9-7.9C12-0.3,10-0.3,8.8,0.9L0.9,8.8C-1,10.7,0.3,14,3.1,14H19C21.7,14,23,10.7,21.1,8.8z" />
+            </svg>
+            <h2>Leaves, Sand, Grass, Recycled glass beads, Nacre, and cork</h2>
+            <p>
+                Nazca Unpasted Wallpaper by York Wallcovering Studio. York offers eco-friendly wallpapers made with
+                natural materials such as leaves, sand, grass, recycled glass beads, nacre and cork.
+                The use of 100% natural fibres makes the products breathable. They use a smoke-free ink
+                system so efficient that it eliminates the need for emission controls, and apply
+                water-based coatings for durability. Nazca Unpasted Wallpaper is made of a non-woven
+                material crafted from cellulose and textile fibres. They are vapour-permeable and
+                regulate moisture, minimizing the risk of mold or mildew.
+            </p>
+        </div>
+    </div>
+    <script>
+        setTimeout(() => {
+            $("#neoclassicism-container").twentytwenty({
                 default_offset_pct: 0.95, // How much of the before image is visible when the page loads
                 orientation: 'horizontal', // Orientation of the before and after images ('horizontal' or 'vertical')
                 before_label: 'Before', // Set a custom before label
@@ -108,17 +129,19 @@
                 move_slider_on_hover: false, // Move slider on mouse hover?
                 move_with_handle_only: true, // Allow a user to swipe anywhere on the image to control slider movement. 
                 click_to_move: false // Allow a user to click (or tap) anywhere on the image to move the slider to that location.
-            })}, 1000);
+            })
+        }, 1000);
 
-            function openTooltip(id) {
-                $(".open").map((item, div) => {
-                    if (div.id !== id + "-tooltip" && div.id !== id + "-button") {
-                        div.classList.remove("open");
-                    }
-                })
-                $("#" + id + "-tooltip").toggleClass("open");
-                $("#" + id + "-button").toggleClass("open");
-            }
-        </script>
-    </body>
+        function openTooltip(id) {
+            $(".open").map((item, div) => {
+                if (div.id !== id + "-tooltip" && div.id !== id + "-button") {
+                    div.classList.remove("open");
+                }
+            })
+            $("#" + id + "-tooltip").toggleClass("open");
+            $("#" + id + "-button").toggleClass("open");
+        }
+    </script>
+</body>
+
 </html>

@@ -1,0 +1,137 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/jquery.event.move.js" type="text/javascript"></script>
+    <script src="js/jquery.twentytwenty.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/twentytwenty.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/victorian.css" type="text/css" media="screen" />
+</head>
+
+<body>
+    <h1 class="narritive-title">Victorian Era</h1>
+    <p class="narritive-description">
+        Through the re-imagined space of the Victorian Era, Neologisms puts the accent on
+        replacing textiles sourced from all over the world due to the growth of the global
+        trade in the mid-1800s, with local, more accessible fabrics. The heavy, expensive
+        curtains and upholstery of old were designed to last a lifetime but often employed
+        materials, chemicals and manufacturing processes that produced considerable waste.
+        The modern materials used in this project, in contrast, are locally-sourced and made
+        of organic and recycled materials produced through non-toxic, chemical-free manufacturing
+        processes which make them more sustainable but also reduces their lifespan.
+    </p>
+    <div style="position: relative;max-width: 1242px;width: 100%;margin: 0 auto;">
+        <div id="victorian-container" class="twentytweny-container">
+            <img
+                src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/60889e3dd656d5b90824ddba_victorian-original.png" />
+            <img
+                src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/60889e3c6e3d6cc83e32324b_victorian.png" />
+            <button id="wall-button" class="button wall-button" onclick="openTooltip('wall')">
+                <div class="button-center"></div>
+            </button>
+            <button id="couch-button" class="button couch-button" onclick="openTooltip('couch')">
+                <div class="button-center"></div>
+            </button>
+            <button id="light-button" class="button light-button" onclick="openTooltip('light')">
+                <div class="button-center"></div>
+            </button>
+            <button id="floor-button" class="button floor-button" onclick="openTooltip('floor')">
+                <div class="button-center"></div>
+            </button>
+        </div>
+        <div class="tooltip wall-tooltip" id="wall-tooltip">
+            <svg class="left-arrow" width="22" height="12" viewBox="0 0 22 14">
+                <path fill="#ffffff"
+                    d="M21.1,8.8l-7.9-7.9C12-0.3,10-0.3,8.8,0.9L0.9,8.8C-1,10.7,0.3,14,3.1,14H19C21.7,14,23,10.7,21.1,8.8z" />
+            </svg>
+            <h2>3D printed Thermoplastic polyurethane</h2>
+            <p>
+                After considering MIT’s most recent developments in the field of 3D printed fabrics, we chose to use a
+                3D printed TPU for the walls of this design. The MIT researchers experimented with many materials until
+                they discovered that basic TPU provides the best results. They created a very effective, flexible, and
+                strong, but soft fabric.
+                </br></br>Thermoplastic polyurethane (TPU) is rigid – making it easier to use for 3D printing. It’s
+                durable and can retain its elasticity in the cold. TPU is degradable, non-toxic and made without the use
+                of plasticizers. There is no DMF residue in the final products and the raw materials used in the
+                production process can be recycled.
+            </p>
+        </div>
+        <div class="tooltip couch-tooltip" id="couch-tooltip">
+            <svg class="bottom-arrow" width="22" height="12" viewBox="0 0 22 14">
+                <path fill="#ffffff"
+                    d="M21.1,8.8l-7.9-7.9C12-0.3,10-0.3,8.8,0.9L0.9,8.8C-1,10.7,0.3,14,3.1,14H19C21.7,14,23,10.7,21.1,8.8z" />
+            </svg>
+            <h2>Recycled polyester</h2>
+            <p>
+                Knoll considers sustainability to be related to the decisions that shape the daily lives of the
+                community. The design, manufacturing and management decisions Knoll makes are tightly connected with
+                environmental, economic, and social factors.
+                </br></br>Abacus upholstery resembles wool. However, it is made of 100 percent recycled polyester
+                sourced from both post-consumer (soda bottles) and post-industrial (production scraps) materials. The
+                products contain either 75% natural or bio-based materials, or a combination of pre and post-consumer
+                recycled content making up at least 50% of its composition.
+            </p>
+        </div>
+        <div class="tooltip light-tooltip" id="light-tooltip">
+            <svg width="22" height="12" viewBox="0 0 22 14">
+                <path fill="#ffffff"
+                    d="M21.1,8.8l-7.9-7.9C12-0.3,10-0.3,8.8,0.9L0.9,8.8C-1,10.7,0.3,14,3.1,14H19C21.7,14,23,10.7,21.1,8.8z" />
+            </svg>
+            <h2>Linen</h2>
+            <p>
+                Crate&Barrel produce eco-friendly products by minimizing petroleum-based foam and using more
+                energy-efficient alternatives such as soy and corn-based foam and fibers, as well as partially recycled
+                steel. The company uses a specialty facility that recycles all fiber and fabric remnants for alternative
+                applications with no harmful liquid or solid waste.
+                </br></br>Crate&Barrel Avery Linen Double Drum Pendant Light is made of linen which is one of the most
+                environmentally sustainable fibers to produce. The flax used to make linen can be grown anywhere in the
+                world, while the manufacturing process itself is simple, chemical-free and requires very little water.
+            </p>
+        </div>
+        <div class="tooltip floor-tooltip" id="floor-tooltip">
+            <svg class="right-arrow" width="22" height="12" viewBox="0 0 22 14">
+                <path fill="#ffffff"
+                    d="M21.1,8.8l-7.9-7.9C12-0.3,10-0.3,8.8,0.9L0.9,8.8C-1,10.7,0.3,14,3.1,14H19C21.7,14,23,10.7,21.1,8.8z" />
+            </svg>
+            <h2>Recycled Plastic Bottles</h2>
+            <p>
+                Shaw Contract has been turning clear plastic bottles into carpet fiber for more than a decade. In 2003
+                they found a way to incorporate harder-to-use green plastic bottles into some of their products and, in
+                2019, produced a line of carpets that is 100% recyclable.
+                </br></br>The Striation rug is a PVC-free carpet designed to be separated into component materials for
+                carpet-to-carpet recycling. Each tile is labelled with a toll-free number that customers can call and
+                arrange to have used tiles picked up for recycling.
+            </p>
+        </div>
+    </div>
+    <script>
+        setTimeout(() => {
+            $("#victorian-container").twentytwenty({
+                default_offset_pct: 0.95, // How much of the before image is visible when the page loads
+                orientation: 'horizontal', // Orientation of the before and after images ('horizontal' or 'vertical')
+                before_label: 'Before', // Set a custom before label
+                after_label: 'After', // Set a custom after label
+                no_overlay: true, //Do not show the overlay with before and after
+                move_slider_on_hover: false, // Move slider on mouse hover?
+                move_with_handle_only: true, // Allow a user to swipe anywhere on the image to control slider movement. 
+                click_to_move: false // Allow a user to click (or tap) anywhere on the image to move the slider to that location.
+            })
+        }, 1000);
+
+        function openTooltip(id) {
+            $(".open").map((item, div) => {
+                if (div.id !== id + "-tooltip" && div.id !== id + "-button") {
+                    div.classList.remove("open");
+                }
+            })
+            $("#" + id + "-tooltip").toggleClass("open");
+            $("#" + id + "-button").toggleClass("open");
+        }
+    </script>
+</body>
+
+</html>
