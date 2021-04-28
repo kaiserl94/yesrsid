@@ -41,12 +41,12 @@
             top: 101px;
             left: 0;
             width: 100%;
-            background-color: #445b5d;
+            background-color: #47474e;
         }
 
         .video {
-            width: 525px;
-            height: 394px;
+            width: 774px;
+            height: 478px;
             position: absolute;
             transform-origin: top left;
             top: 0;
@@ -79,58 +79,58 @@
     <div id="background" class="background"></div>
     <div id="room-container" class="room-container">
         <img id="ref-img" class="background-image"
-            src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/60846e39fcf69458ae149806_grunge.jpg"
+            src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6088bc6f37a869fdeeaa77b1_urbanfab.png"
             width="1285" height="905" />
-        <iframe id="iframe" class="video" src="https://www.youtube.com/embed/jGnQMj-MhpA" title="YouTube video player"
+        <iframe id="iframe" class="video" src="https://www.youtube.com/embed/eHc-vRO9nPM" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
 
         <div class="video-list">
-            <button onclick="switchToVideo(0)">Komal Chandla</button>
-            <button onclick="switchToVideo(1)">Pansy Wong</button>
-            <button onclick="switchToVideo(2)">Jackie Ly</button>
-            <button onclick="switchToVideo(3)">Nassila Oudahmane</button>
-            <button onclick="switchToVideo(4)">Julia Jaynes</button>
-            <button onclick="switchToVideo(5)">Nehaa Rahman</button>
-            <button onclick="switchToVideo(6)">Diana Ronin</button>
+            <button onclick="switchToVideo(0)">Diane Lin</button>
+            <button onclick="switchToVideo(1)">Minseo Ji</button>
+            <button onclick="switchToVideo(2)">Thuc Tam Bui</button>
+            <button onclick="switchToVideo(3)">Elham Morshedi</button>
+            <button onclick="switchToVideo(4)">Yihanna Sun</button>
+            <button onclick="switchToVideo(5)">Celeste Lava</button>
+            <button onclick="switchToVideo(6)">Marilou Vaillancourt</button>
         </div>
         <script>
-            const fromTop = 173 / 905;
-            const fromLeft = 283 / 1285;
-            const fromRight = 477 / 1285;
-            const fromBottom = 338 / 905;
+            const fromTop = 242 / 905;
+            const fromLeft = 111 / 1285;
+            const fromRight = 400 / 1285;
+            const fromBottom = 185 / 905;
 
             const aspectRatio = 1285 / 905;
 
             const videoLinks = {
                 "one": {
-                    "name": "Komal Chandla",
-                    "url": "https://www.youtube.com/embed/jGnQMj-MhpA",
+                    "name": "Diane Lin",
+                    "url": "https://www.youtube.com/embed/eHc-vRO9nPM",
                 },
                 "two": {
-                    "name": "Pansy Wong",
-                    "url": "https://www.youtube.com/embed/-ieQtJxfLlo",
+                    "name": "Minseo Ji",
+                    "url": "https://www.youtube.com/embed/n6n5r8UlN9U",
                 },
                 "three": {
-                    "name": "Jackie Ly",
-                    "url": "https://www.youtube.com/embed/IlY2WadkyTU",
+                    "name": "Thuc Tam Bui",
+                    "url": "https://www.youtube.com/embed/eMMmgLP7kCc",
                 },
                 "four": {
-                    "name": "Nassila Oudahmane",
-                    "url": "https://www.youtube.com/embed/K_dN-_8TD1U",
+                    "name": "Elham Morshedi",
+                    "url": "https://www.youtube.com/embed/mO8THbvgkmc",
                 },
                 "five": {
-                    "name": "Julia Jaynes",
-                    "url": "https://www.youtube.com/embed/1JIt953eOH0",
+                    "name": "Yihanna Sun",
+                    "url": "https://www.youtube.com/embed/0NAbF_D2GdY",
                 },
                 "six": {
-                    "name": "Nehaa Rahman",
-                    "url": "https://www.youtube.com/embed/JSiO41L_ctI",
+                    "name": "Celeste Lava",
+                    "url": "https://www.youtube.com/embed/6XdNaUOTSIU",
                 },
                 "seven": {
-                    "name": "Diana Ronin",
-                    "url": "https://www.youtube.com/embed/Mb4hdhY11T4",
+                    "name": "Marilou Vaillancourt",
+                    "url": "https://www.youtube.com/embed/UUpfIkENk7I",
                 },
             };
             let count = 0;

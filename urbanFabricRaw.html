@@ -1,0 +1,173 @@
+<style>
+    :root {
+        --base-font-family: "Shadows Into Light", "Helvetica", "Arial", sans-serif;
+    }
+
+    .room-container {
+        margin: 0 auto;
+        max-width: 100%;
+        max-height: 100vh;
+        position: relative;
+    }
+
+    .background-image {
+        max-width: 100%;
+        max-height: 100vh;
+        height: auto;
+        display: block;
+    }
+
+    .background {
+        position: absolute;
+        top: 101px;
+        left: 0;
+        width: 100%;
+        background-color: #47474e;
+    }
+
+    .video {
+        width: 774px;
+        height: 478px;
+        position: absolute;
+        transform-origin: top left;
+        top: 0;
+        left: 0;
+    }
+
+    .video-list {
+        position: absolute;
+        top: 9.8%;
+        right: 3.5%;
+        width: 25%;
+    }
+
+    .video-list>button {
+        background: transparent;
+        outline: 0;
+        border: 0;
+        font-size: 24px;
+        text-align: left;
+        display: block;
+        width: 100%;
+        cursor: pointer;
+        font-family: var(--base-font-family);
+    }
+
+    .video-list>button:hover {
+        text-decoration: underline;
+    }
+</style>
+<div id="background" class="background"></div>
+<div id="room-container" class="room-container">
+    <img id="ref-img" class="background-image"
+        src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6088bc6f37a869fdeeaa77b1_urbanfab.png"
+        width="1285" height="905" />
+    <iframe id="iframe" class="video" src="https://www.youtube.com/embed/eHc-vRO9nPM" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    <div class="video-list">
+        <button onclick="switchToVideo(0)">Diane Lin</button>
+        <button onclick="switchToVideo(1)">Minseo Ji</button>
+        <button onclick="switchToVideo(2)">Thuc Tam Bui</button>
+        <button onclick="switchToVideo(3)">Elham Morshedi</button>
+        <button onclick="switchToVideo(4)">Yihanna Sun</button>
+        <button onclick="switchToVideo(5)">Celeste Lava</button>
+        <button onclick="switchToVideo(6)">Marilou Vaillancourt</button>
+    </div>
+    <script>
+        const fromTop = 242 / 905;
+        const fromLeft = 111 / 1285;
+        const fromRight = 400 / 1285;
+        const fromBottom = 185 / 905;
+
+        const aspectRatio = 1285 / 905;
+
+        const videoLinks = {
+            "one": {
+                "name": "Diane Lin",
+                "url": "https://www.youtube.com/embed/eHc-vRO9nPM",
+            },
+            "two": {
+                "name": "Minseo Ji",
+                "url": "https://www.youtube.com/embed/n6n5r8UlN9U",
+            },
+            "three": {
+                "name": "Thuc Tam Bui",
+                "url": "https://www.youtube.com/embed/eMMmgLP7kCc",
+            },
+            "four": {
+                "name": "Elham Morshedi",
+                "url": "https://www.youtube.com/embed/mO8THbvgkmc",
+            },
+            "five": {
+                "name": "Yihanna Sun",
+                "url": "https://www.youtube.com/embed/0NAbF_D2GdY",
+            },
+            "six": {
+                "name": "Celeste Lava",
+                "url": "https://www.youtube.com/embed/6XdNaUOTSIU",
+            },
+            "seven": {
+                "name": "Marilou Vaillancourt",
+                "url": "https://www.youtube.com/embed/UUpfIkENk7I",
+            },
+        };
+        let count = 0;
+
+        const videoData = [
+            videoLinks.one,
+            videoLinks.two,
+            videoLinks.three,
+            videoLinks.four,
+            videoLinks.five,
+            videoLinks.six,
+            videoLinks.seven,
+        ]
+
+        let roomContainer = document.getElementById("room-container");
+        let image = document.getElementById("ref-img");
+        let iframe = document.getElementById("iframe");
+        let background = document.getElementById("background");
+        resizeEverything();
+
+        function resizeEverything() {
+            if (!roomContainer) {
+                roomContainer = document.getElementById("room-container");
+            }
+            if (!image) {
+                image = document.getElementById("ref-img");
+            }
+            if (!iframe) {
+                iframe = document.getElementById("iframe");
+            }
+
+            if (!background) {
+                background = document.getElementById("background");
+            }
+
+            const newWidth = window.innerWidth > 1285 ? 1285 : window.innerWidth;
+            const newHeight = newWidth * (1 / aspectRatio);
+            roomContainer.style.width = newWidth + "px";
+            roomContainer.style.height = newHeight + "px";
+
+            background.style.height = newHeight + "px";
+
+            const left = image.width * fromLeft;
+            const top = image.height * fromTop;
+
+            const scale = image.width / 1285;
+            iframe.style.transform = `translate3d(${left}px, ${top}px, 0px) scale(${scale})`;
+        }
+
+        function switchToVideo(number) {
+            iframe.src = videoData[number].url;
+        }
+
+        window.onresize = () => {
+            resizeEverything();
+        }
+    </script>
+
+</div>
+</div>
