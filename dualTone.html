@@ -41,11 +41,12 @@
             top: 101px;
             left: 0;
             width: 100%;
-            background-color: #445b5d;
+            background-color: #f4c1a0;
         }
 
         .video {
-            width: 525px;
+            border-radius: 25px;
+            width: 478px;
             height: 394px;
             position: absolute;
             transform-origin: top left;
@@ -79,58 +80,58 @@
     <div id="background" class="background"></div>
     <div id="room-container" class="room-container">
         <img id="ref-img" class="background-image"
-            src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/60846e39fcf69458ae149806_grunge.jpg"
-            width="1285" height="905" />
-        <iframe id="iframe" class="video" src="https://www.youtube.com/embed/eHc-vRO9nPM" title="YouTube video player"
+            src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6088b9836d881664caab8eda_dualtone.png"
+            width="1609" height="905" />
+        <iframe id="iframe" class="video" src="https://www.youtube.com/embed/MagInTLXwZo" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
 
         <div class="video-list">
-            <button onclick="switchToVideo(0)">Diane Lin</button>
-            <button onclick="switchToVideo(1)">Pansy Wong</button>
-            <button onclick="switchToVideo(2)">Jackie Ly</button>
-            <button onclick="switchToVideo(3)">Nassila Oudahmane</button>
-            <button onclick="switchToVideo(4)">Julia Jaynes</button>
-            <button onclick="switchToVideo(5)">Nehaa Rahman</button>
-            <button onclick="switchToVideo(6)">Diana Ronin</button>
+            <button onclick="switchToVideo(0)">Jimmy Sung</button>
+            <button onclick="switchToVideo(1)">Dina Badawi</button>
+            <button onclick="switchToVideo(2)">Leo Ng</button>
+            <button onclick="switchToVideo(3)">Dayan Afshari</button>
+            <button onclick="switchToVideo(4)">Daniela F-Bautista</button>
+            <button onclick="switchToVideo(5)">Jacqueline Hung</button>
+            <button onclick="switchToVideo(6)">Asma Fazal</button>
         </div>
         <script>
-            const fromTop = 173 / 905;
-            const fromLeft = 283 / 1285;
-            const fromRight = 477 / 1285;
-            const fromBottom = 338 / 905;
+            const fromTop = 149 / 905;
+            const fromLeft = 547 / 1609;
+            const fromRight = 584 / 1609;
+            const fromBottom = 362 / 905;
 
-            const aspectRatio = 1285 / 905;
+            const aspectRatio = 1609 / 905;
 
             const videoLinks = {
                 "one": {
-                    "name": "Diane Lin",
-                    "url": "https://www.youtube.com/embed/eHc-vRO9nPM",
+                    "name": "Jimmy Sung",
+                    "url": "https://www.youtube.com/embed/MagInTLXwZo",
                 },
                 "two": {
-                    "name": "Pansy Wong",
-                    "url": "https://www.youtube.com/embed/-ieQtJxfLlo",
+                    "name": "Dina Badawi",
+                    "url": "https://www.youtube.com/embed/SnWBKq2iGsA",
                 },
                 "three": {
-                    "name": "Jackie Ly",
-                    "url": "https://www.youtube.com/embed/IlY2WadkyTU",
+                    "name": "Leo Ng",
+                    "url": "https://www.youtube.com/embed/QS3Uv2iBjQ0",
                 },
                 "four": {
-                    "name": "Nassila Oudahmane",
-                    "url": "https://www.youtube.com/embed/K_dN-_8TD1U",
+                    "name": "Dayan Afshari",
+                    "url": "https://www.youtube.com/embed/82yalqT3MkQ",
                 },
                 "five": {
-                    "name": "Julia Jaynes",
-                    "url": "https://www.youtube.com/embed/1JIt953eOH0",
+                    "name": "Daniela F-Bautista",
+                    "url": "https://www.youtube.com/embed/VfjJPoG_Qn8",
                 },
                 "six": {
-                    "name": "Nehaa Rahman",
-                    "url": "https://www.youtube.com/embed/JSiO41L_ctI",
+                    "name": "Jacqueline Hung",
+                    "url": "https://www.youtube.com/embed/_-qN_kG8RFM",
                 },
                 "seven": {
-                    "name": "Diana Ronin",
-                    "url": "https://www.youtube.com/embed/Mb4hdhY11T4",
+                    "name": "Asma Fazal",
+                    "url": "https://www.youtube.com/embed/AjMsB3MzZCA",
                 },
             };
             let count = 0;
@@ -166,7 +167,7 @@
                     background = document.getElementById("background");
                 }
 
-                const newWidth = window.innerWidth > 1285 ? 1285 : window.innerWidth;
+                const newWidth = window.innerWidth > 1609 ? 1609 : window.innerWidth;
                 const newHeight = newWidth * (1 / aspectRatio);
                 roomContainer.style.width = newWidth + "px";
                 roomContainer.style.height = newHeight + "px";
@@ -176,7 +177,7 @@
                 const left = image.width * fromLeft;
                 const top = image.height * fromTop;
 
-                const scale = image.width / 1285;
+                const scale = image.width / 1609;
                 iframe.style.transform = `translate3d(${left}px, ${top}px, 0px) scale(${scale})`;
             }
 
@@ -188,8 +189,6 @@
                 resizeEverything();
             }
         </script>
-
-    </div>
     </div>
 </body>
 
