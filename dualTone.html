@@ -9,9 +9,9 @@
 <body style="background-color: black; margin: 0; padding: 0;">
     <style>
         @font-face {
-            font-family: 'Shadows Into Light';
+            font-family: 'Squound';
 
-            src: url('./fonts/ShadowsIntoLight-Regular.ttf');
+            src: url('./fonts/Squound-Regular.otf');
 
             font-display: swap;
             font-style: normal;
@@ -19,7 +19,7 @@
         }
 
         :root {
-            --base-font-family: "Shadows Into Light", "Helvetica", "Arial", sans-serif;
+            --base-font-family: "Squound", "Helvetica", "Arial", sans-serif;
         }
 
         .room-container {
@@ -56,15 +56,17 @@
 
         .video-list {
             position: absolute;
-            top: 9.8%;
-            right: 3.5%;
-            width: 25%;
+            top: 17.5%;
+            right: 21.62%;
+            width: 13.67%;
         }
 
         .video-list>button {
             background: transparent;
             outline: 0;
             border: 0;
+            color: #c6521f;
+            padding: 5px 20px;
             font-size: 24px;
             text-align: left;
             display: block;
@@ -73,14 +75,121 @@
             font-family: var(--base-font-family);
         }
 
+        .set-design {
+            width: 18%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 2;
+        }
+
         .video-list>button:hover {
             text-decoration: underline;
+        }
+
+        .mobile-video-list {
+            display: none;
+            width: 340px;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: #f7ccb0;
+            margin: 0 auto;
+            top: 50px;
+            box-sizing: border-box;
+            position: relative;
+            box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.3);
+        }
+
+        .mobile-video-list>a {
+            background: transparent;
+            outline: 0;
+            border: 0;
+            color: #c6521f;
+            padding: 5px 20px;
+            font-size: 20px;
+            text-align: left;
+            display: block;
+            width: 100%;
+            cursor: pointer;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: var(--base-font-family);
+        }
+
+        .mobile-video-list>a:hover {
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 1400px) {
+            .video-list>button {
+                font-size: 18px;
+            }
+        }
+
+        @media screen and (max-width: 1285px) {
+            .video-list>button {
+                padding: 3px 20px;
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 1150px) {
+            .video-list>button {
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (max-width: 1050px) {
+            .video-list>button {
+                font-size: 12px;
+            }
+        }
+
+        @media screen and (max-width: 991px) {
+
+            .background-image,
+            .video-list,
+            .video {
+                display: none;
+            }
+
+            .set-design {
+                width: 300px;
+            }
+
+            .mobile-video-list {
+                display: block;
+            }
+
+            .room-container {
+                width: 100% !important;
+                height: 100vh !important;
+                max-width: unset;
+                max-height: unset;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-image: url("https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/608a0187b6535176b8e4a693_Dual%20Tone_Screen%20Render_Aprill%2017.jpg");
+            }
+        }
+
+        @media screen and (max-width: 911px) {
+            .mobile-video-list {
+                top: 150px;
+            }
+        }
+
+        @media screen and (max-width: 340px) {
+            .mobile-video-list {
+                width: 280px;
+            }
         }
     </style>
     <div id="background" class="background"></div>
     <div id="room-container" class="room-container">
+        <img class="set-design"
+            src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6089fe7bb6f6b57c42209bb0_set-design.png" />
         <img id="ref-img" class="background-image"
-            src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6088b9836d881664caab8eda_dualtone.png"
+            src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6089fe748613a5e18b39b364_April%2010_Dual%20Tone%20Room.png"
             width="1609" height="905" />
         <iframe id="iframe" class="video" src="https://www.youtube.com/embed/MagInTLXwZo" title="YouTube video player"
             frameborder="0"
@@ -96,6 +205,17 @@
             <button onclick="switchToVideo(5)">Jacqueline Hung</button>
             <button onclick="switchToVideo(6)">Asma Fazal</button>
         </div>
+
+        <div class="mobile-video-list">
+            <a href="https://www.youtube.com/watch?v=MagInTLXwZo" target="_blank">Jimmy Sung</a>
+            <a href="https://www.youtube.com/watch?v=SnWBKq2iGsA" target="_blank">Dina Badawi</a>
+            <a href="https://www.youtube.com/watch?v=QS3Uv2iBjQ0" target="_blank">Leo Ng</a>
+            <a href="https://www.youtube.com/watch?v=82yalqT3MkQ" target="_blank">Dayan Afshari</a>
+            <a href="https://www.youtube.com/watch?v=VfjJPoG_Qn8" target="_blank">Daniela F-Bautista</a>
+            <a href="https://www.youtube.com/watch?v=_-qN_kG8RFM" target="_blank">Jacqueline Hung</a>
+            <a href="https://www.youtube.com/watch?v=AjMsB3MzZCA" target="_blank">Asma Fazal</a>
+        </div>
+
         <script>
             const fromTop = 149 / 905;
             const fromLeft = 547 / 1609;
