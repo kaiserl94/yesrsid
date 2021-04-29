@@ -57,9 +57,91 @@
     .video-list>button:hover {
         text-decoration: underline;
     }
+
+    .communications {
+        width: 18%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+    .mobile-video-list {
+        display: none;
+        position: absolute;
+        right: 135px;
+        top: 125px;
+    }
+
+    .mobile-video-list>a {
+        color: black;
+        z-index: 3;
+        background: transparent;
+        outline: 0;
+        border: 0;
+        padding-left: 20px;
+        font-size: 32px;
+        text-align: left;
+        display: block;
+        width: 100%;
+        cursor: pointer;
+        font-family: var(--base-font-family);
+    }
+
+    @media screen and (max-width: 1250px) {
+        .video-list>button {
+            font-size: 28px;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        .video-list>button {
+            font-size: 24px;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        .video-list>button {
+            font-size: 24px;
+        }
+
+        .video {
+            display: none;
+        }
+
+        .background-image {
+            position: absolute;
+            width: 1285px;
+            right: 0;
+            height: 905px;
+            max-width: unset;
+            max-height: unset;
+        }
+
+        .communications {
+            width: 310px;
+        }
+
+        .video-list {
+            display: none;
+        }
+
+        .mobile-video-list {
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 350px) {
+        .mobile-video-list>a {
+            font-size: 28px;
+        }
+    }
 </style>
 <div id="background" class="background"></div>
 <div id="room-container" class="room-container">
+    <img class="communications"
+        src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6089f86560f19caebcd4deaf_communications.png" />
+
     <img id="ref-img" class="background-image"
         src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/60846e39fcf69458ae149806_grunge.jpg" width="1285"
         height="905" />
@@ -75,6 +157,15 @@
         <button onclick="switchToVideo(4)">Julia Jaynes</button>
         <button onclick="switchToVideo(5)">Nehaa Rahman</button>
         <button onclick="switchToVideo(6)">Diana Ronin</button>
+    </div>
+    <div class="mobile-video-list">
+        <a href="https://www.youtube.com/watch?v=jGnQMj-MhpA" target="_blank">Komal Chandla</a>
+        <a href="https://www.youtube.com/watch?v=-ieQtJxfLlo" target="_blank">Pansy Wong</a>
+        <a href="https://www.youtube.com/watch?v=IlY2WadkyTU" target="_blank">Jackie Ly</a>
+        <a href="https://www.youtube.com/watch?v=K_dN-_8TD1U" target="_blank">Nassila Oudahmane</a>
+        <a href="https://www.youtube.com/watch?v=1JIt953eOH0" target="_blank">Julia Jaynes</a>
+        <a href="https://www.youtube.com/watch?v=JSiO41L_ctI" target="_blank">Nehaa Rahman</a>
+        <a href="https://www.youtube.com/watch?v=Mb4hdhY11T4" target="_blank">Diana Ronin</a>
     </div>
     <script>
         const fromTop = 173 / 905;
