@@ -713,6 +713,36 @@
         display: flex;
     }
 
+    .panelist-flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .panelist-flex>.yes-popup-panelist {
+        width: 25%;
+        display: block;
+    }
+
+    .panelist-flex .yes-popup-panelist>img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    .panelist-flex .yes-popup-panelist-info>h2 {
+        font-size: 18px !important;
+        text-align: center;
+        padding: 0 10px;
+        margin-bottom: 5px;
+    }
+
+    .panelist-flex .yes-popup-panelist-info>h3 {
+        font-size: 14px !important;
+        text-align: center;
+        padding: 0 10px;
+    }
+
     @media screen and (max-width: 1920px) {
 
         .yes-blue-background,
@@ -987,6 +1017,11 @@
             font-size: 28px;
             line-height: 28px;
         }
+
+        .panelist-flex>.yes-popup-panelist {
+            width: 50%;
+            display: block;
+        }
     }
 
     @media screen and (max-width: 600px) {
@@ -1180,6 +1215,7 @@
         }
     }
 </style>
+
 <img class="yes-splatter"
     src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a2b484f1ab89bb06a0db3_splatter.png" />
 <div class="yes-title-header">
@@ -1269,7 +1305,7 @@
                     </div>
                     <div class="yes-panelist-container">
                         <button class="yes-button yes-button-medium yes-button-blue"
-                            onclick="showPopup('virtualNetworking1');">Learn More</button>
+                            onclick="showPopup('virtualNetworking1', false);">Learn More</button>
                         <a class="yes-button yes-button-medium yes-button-black" download="Virtual Networking 1.ics"
                             href="data:text/calendar;base64,QkVHSU46VkNBTEVOREFSDQpWRVJTSU9OOjIuMA0KQkVHSU46VkVWRU5UDQpDTEFTUzpQVUJMSUMNCkRFU0NSSVBUSU9OOlZpcnR1YWwgTmV0d29ya2luZ1xuRGF0ZSBhbmQgVGltZSAtIE1heSA1XCwgMjAyMSA3OjMwIFBNIHRvIDg6MzAgUE1cblZlbnVlIC0geWVzcnNpZC5jb21cblJ5ZXJzb24gU2Nob29sIG9mIEludGVyaW9yIERlc2lnbidzIFllYXIgRW5kIFNob3cgMjAyMTogUmUtVmlzaW9uXG4NCkRUU1RBUlQ6MjAyMTA1MDVUMjMzMDAwWg0KRFRFTkQ6MjAyMTA1MDZUMDAzMDAwWg0KTE9DQVRJT046eWVzcnNpZC5jb20NClNVTU1BUlk7TEFOR1VBR0U9ZW4tdXM6VmlydHVhbCBOZXR3b3JraW5nDQpFTkQ6VkVWRU5UDQpFTkQ6VkNBTEVOREFS">Add
                             To
@@ -1404,7 +1440,7 @@
                     </div>
                     <div class="yes-panelist-container">
                         <button class="yes-button yes-button-medium yes-button-blue"
-                            onclick="showPopup('virtualNetworking2');">Learn More</button>
+                            onclick="showPopup('virtualNetworking2', false);">Learn More</button>
                         <a class="yes-button yes-button-medium yes-button-black" download="Virtual Networking 2.ics"
                             href="data:text/calendar;base64,QkVHSU46VkNBTEVOREFSDQpWRVJTSU9OOjIuMA0KQkVHSU46VkVWRU5UDQpDTEFTUzpQVUJMSUMNCkRFU0NSSVBUSU9OOlZpcnR1YWwgTmV0d29ya2luZ1xuRGF0ZSBhbmQgVGltZSAtIE1heSA2XCwgMjAyMSA2OjAwIFBNIHRvIDc6MDAgUE1cblZlbnVlIC0geWVzcnNpZC5jb21cblJ5ZXJzb24gU2Nob29sIG9mIEludGVyaW9yIERlc2lnbidzIFllYXIgRW5kIFNob3cgMjAyMTogUmUtVmlzaW9uXG4NCkRUU1RBUlQ6MjAyMTA1MDZUMjIwMDAwWg0KRFRFTkQ6MjAyMTA1MDZUMjMwMDAwWg0KTE9DQVRJT046eWVzcnNpZC5jb20NClNVTU1BUlk7TEFOR1VBR0U9ZW4tdXM6VmlydHVhbCBOZXR3b3JraW5nDQpFTkQ6VkVWRU5UDQpFTkQ6VkNBTEVOREFS">Add
                             To
@@ -1831,6 +1867,7 @@
         </div>
     </div>
 </div>
+
 <script>
     const events = {
         "openingCeremony": {
@@ -2197,6 +2234,56 @@
             "bio": "John Sicat is in his fourth year of study at Ryerson's School of Interior Design. His experience in a wide range of extracurricular activities and design fabrication projects bring a unique perspective to his design work. John's passion for fabrication and material study has led to a distinct experimental approach which emphasizes the iterative process and sensory affects within a designed space or artifact. His current interests lay in explorations of biomaterials and design that tackles underserved issues/communities through innovative methodologies. John hopes to further explore this relationship between materiality, place and time in his future design work.",
             "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6080b79dc02a02dc4b942427_sicat.png",
         },
+        "sotto": {
+            "name": "Jonathan Sotto",
+            "company": "Yabu Pushelberg",
+            "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/608d67263ed039446cdcc037_sotto.png",
+        },
+        "turner": {
+            "name": "Caitlin Turner",
+            "company": "HOK",
+            "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/608d67263ed03934f4dcc036_turner.png",
+        },
+        "tseng": {
+            "name": "Danny Tseng",
+            "company": "Syllable",
+            "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/608d6726589f37034f6ff5a9_tseng.png",
+        },
+        "sabiston": {
+            "name": "Duncan Sabiston",
+            "company": "HOK",
+            "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/608d67268a327b2de67a1f71_sabiston.png",
+        },
+        "walcroft": {
+            "name": "Kelly Walcroft",
+            "company": "Gensler",
+            "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/608d6726af19db0dba7903c3_walcroft.png",
+        },
+        "chan": {
+            "name": "Nichola Chan",
+            "company": "Lemay",
+            "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/608d6726b0e62948863466d2_lemay.png",
+        },
+        "shafir": {
+            "name": "Michael Shafir",
+            "company": "Gensler",
+            "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/608d67261590b1a14f726345_shafir.png",
+        },
+        "balh": {
+            "name": "Nisreen Balh",
+            "company": "Gensler",
+            "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/608d67e48a327b1d317a2584_balh.png",
+        },
+        "goldstein": {
+            "name": "Emily Goldstein",
+            "company": "Yabu Pushelberg",
+            "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/608d6b9cad75c5568c37e3d3_goldstein.png",
+        },
+        "horobin": {
+            "name": "Victoria Horobin",
+            "company": "KBH Interior Design",
+            "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/608d6b9cc542fd5da715f130_horobin.png",
+        },
     }
 
     const openingCeremony = [
@@ -2265,6 +2352,41 @@
         speakers.lzhang
     ]
 
+    const virtualNetworking1 = [
+        speakers.hamilton,
+        speakers.flores,
+        speakers.soto,
+        speakers.abuzeinah,
+        speakers.gluzberg,
+        speakers.zver,
+        speakers.sotto,
+        speakers.turner,
+        speakers.tseng,
+        speakers.sabiston,
+        speakers.walcroft,
+        speakers.chan,
+        speakers.shafir,
+        speakers.balh,
+    ]
+
+    const virtualNetworking2 = [
+        speakers.flores,
+        speakers.bergeron,
+        speakers.turner,
+        speakers.hamilton,
+        speakers.tseng,
+        speakers.sabiston,
+        speakers.sotto,
+        speakers.abuzeinah,
+        speakers.gluzberg,
+        speakers.soto,
+        speakers.shafir,
+        speakers.balh,
+        speakers.zver,
+        speakers.horobin,
+        speakers.goldstein
+    ]
+
     const eventMap = new Map();
     eventMap.set("openingCeremony", openingCeremony);
     eventMap.set("colourInUrbanLandscape", colourInUrbanLandscape);
@@ -2276,6 +2398,8 @@
     eventMap.set("softwareTutorials", softwareTutorials);
     eventMap.set("accessibleDesign", accessibleDesign);
     eventMap.set("womenEntrepreneurship", womenEntrepreneurship);
+    eventMap.set("virtualNetworking1", virtualNetworking1);
+    eventMap.set("virtualNetworking2", virtualNetworking2);
 
     function shuffleArray(array) {
         for (let i = array.length - 1; i > 0; --i) {
@@ -2318,7 +2442,7 @@
         populateCard("womenEntrepreneurship");
     }
 
-    function showPopup(popupInfo) {
+    function showPopup(popupInfo, isPanelist = true) {
         const info = eventMap.get(popupInfo);
         const eventInfo = events[popupInfo];
 
@@ -2343,9 +2467,19 @@
         }
         popupContent.scrollTop = 0;
 
+        if (isPanelist) {
+            panelistContainer.classList.remove("panelist-flex");
+        } else {
+            panelistContainer.classList.add("panelist-flex");
+        }
+
         if (info) {
             for (let i = 0; i < info.length; ++i) {
-                generatePanelist(info[i]);
+                if (isPanelist) {
+                    generatePanelist(info[i]);
+                } else {
+                    generateGuest(info[i]);
+                }
             }
         }
 
@@ -2356,25 +2490,35 @@
     }
 
     function generatePanelist(panelist) {
-        if (!panelistContainer) {
-            panelistContainer = document.getElementById("yes-popup-panelists");
-        }
         const panelistDiv = `
-    <div class="yes-popup-panelist">
-        <img src="${panelist.picture.length > 0 ? panelist.picture : "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a4120a7e782f0d23512ec_default.png"}"/>
-        <div class="yes-popup-panelist-info">
-            <h2>${panelist.company}</h2>
-            <h3>${panelist.name}</h3>
-            <p>${panelist.bio}</p>
-            <div class="yes-popup-panelist-links">
-                ${panelist.site ? `<a target="_blank" href="${panelist.site}" class="yes-popup-social-button"><img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606cd7065509511879deb533_site.svg"/></a>` : ""}
-                ${panelist.email ? `<a target="_blank" href="mailto:${panelist.email}" class="yes-popup-social-button"><img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606cd706dac82d1b34937120_email.svg"/></a>` : ""}
-                ${panelist.instagram ? `<a target="_blank" href="https://www.instagram.com/${panelist.instagram}" class="yes-popup-social-button"><img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606cd60a610ab13367d6871a_instagram.svg"/></a>` : ""}
-                ${panelist.linkedin ? `<a target="_blank" href="${panelist.linkedin}" class="yes-popup-social-button"><img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606cd5f7fa582966df1a5f1d_linkedin.svg"/></a>` : ""}
-            </div>
+<div class="yes-popup-panelist">
+    <img src="${panelist.picture.length > 0 ? panelist.picture : "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a4120a7e782f0d23512ec_default.png"}"/>
+    <div class="yes-popup-panelist-info">
+        <h2>${panelist.company}</h2>
+        <h3>${panelist.name}</h3>
+        <p>${panelist.bio}</p>
+        <div class="yes-popup-panelist-links">
+            ${panelist.site ? `<a target="_blank" href="${panelist.site}" class="yes-popup-social-button"><img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606cd7065509511879deb533_site.svg"/></a>` : ""}
+            ${panelist.email ? `<a target="_blank" href="mailto:${panelist.email}" class="yes-popup-social-button"><img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606cd706dac82d1b34937120_email.svg"/></a>` : ""}
+            ${panelist.instagram ? `<a target="_blank" href="https://www.instagram.com/${panelist.instagram}" class="yes-popup-social-button"><img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606cd60a610ab13367d6871a_instagram.svg"/></a>` : ""}
+            ${panelist.linkedin ? `<a target="_blank" href="${panelist.linkedin}" class="yes-popup-social-button"><img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606cd5f7fa582966df1a5f1d_linkedin.svg"/></a>` : ""}
         </div>
     </div>
-    `;
+</div>
+`;
+
+        panelistContainer.innerHTML += panelistDiv;
+    }
+    function generateGuest(guest) {
+        const panelistDiv = `
+<div class="yes-popup-panelist">
+    <img src="${guest.picture.length > 0 ? guest.picture : "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a4120a7e782f0d23512ec_default.png"}"/>
+    <div class="yes-popup-panelist-info">
+        <h2>${guest.company}</h2>
+        <h3>${guest.name}</h3>
+    </div>
+</div>
+`;
 
         panelistContainer.innerHTML += panelistDiv;
     }
