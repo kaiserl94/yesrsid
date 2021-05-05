@@ -413,6 +413,106 @@ const speakers = {
         "company": "KBH Interior Design",
         "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/608d6b9cc542fd5da715f130_horobin.png",
     },
+    "fleming": {
+        "name": "Annabel Fleming",
+        "company": "Cotton Candy Inc.",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6091f25d116a32581bbc20aa_fleming.png",
+    },
+    "bchan": {
+        "name": "Betty Chan",
+        "company": "St. Michael's Hospital",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6091f25c40a44f8afc4fcf0e_bchan.png",
+    },
+    "patychuk": {
+        "name": "Brett Patychuk",
+        "company": "Kasian Architecture",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6091f25e2ad8665dd7694ee7_patychuk.png",
+    },
+    "toner": {
+        "name": "Danielle Toner",
+        "company": "Figure3",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6091f25e3493da12ec27e6b1_toner.png",
+    },
+    "wolfe": {
+        "name": "Erica Wolfe",
+        "company": "BDP Quadrangle",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6091f25e735d5754db0049aa_wolfe.png",
+    },
+    "milovanovic": {
+        "name": "Filip Milovanovic",
+        "company": "Yabu Pushelberg",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6091f25e40a44f42c54fcf3e_milovanovic.png",
+    },
+    "forrest": {
+        "name": "Jeffrey Forrest",
+        "company": "Stacklab",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6091f25d6b5a901ca1a11888_forrest.png",
+    },
+    "furquan": {
+        "name": "Kaashif Furquan",
+        "company": "Yabu Pushelberg",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6091f25c31dd29e5b3f8ba74_furquan.png",
+    },
+    "appleton": {
+        "name": "Liane Appleton",
+        "company": "Haworth",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6091f25cec8682d1d446b180_appleton.png",
+    },
+    "luzhang": {
+        "name": "Lucy Zhang",
+        "company": "JOVAN HAURD",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6091f25ec469fc60e9033a68_luczhang.png",
+    },
+    "brocken": {
+        "name": "Max Brocken",
+        "company": "Studio Munge",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6091f25ccc5de56a2ad52fa1_brocken.png",
+    },
+    "rowe": {
+        "name": "Natalie Rowe",
+        "company": "Fanshawe College",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6091f25e9899e21e50d1a2a5_rowe.png",
+    },
+    "flodstrom": {
+        "name": "Shanna Flodstrom",
+        "company": "Yabu Pushelberg",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6091f25d254146784d92cbb4_flodstrom.png",
+    },
+    "gorgachev": {
+        "name": "Tatyana Gorgachev",
+        "company": "Essentia Interiors",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6091f25e4a64d37bce0d1e83_gorgachev.png",
+    },
+    "groll": {
+        "name": "Tess Van Groll",
+        "company": "Ryerson University",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6091f25e1f1b9fb2e263b640_groll.png",
+    },
+    "berznoger": {
+        "name": "Yoel Berznoger",
+        "company": "Haworth",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6091f25d2583bd17448f0bea_berznoger.png",
+    },
+    "bustamante": {
+        "name": "Daniella Bustamante",
+        "company": "Bridge and Arrow",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6091f4c92583bd82ed8f16fb_bustamante.png",
+    },
+    "london": {
+        "name": "Michael London",
+        "company": "",
+        "picture": "",
+    },
+    "forti": {
+        "name": "Theresa Forti",
+        "company": "",
+        "picture": "",
+    },
+    "pitoglou": {
+        "name": "Fontini Pitoglou",
+        "company": "FORREC",
+        "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fdaf95c225f22727fe_pitoglou.png",
+    },
 }
 
 const openingCeremony = [
@@ -484,7 +584,7 @@ const womenEntrepreneurship = [
 const virtualNetworking1 = [
     speakers.hamilton,
     speakers.flores,
-    speakers.soto, 
+    speakers.soto,
     speakers.abuzeinah,
     speakers.gluzberg,
     speakers.zver,
@@ -496,6 +596,22 @@ const virtualNetworking1 = [
     speakers.chan,
     speakers.shafir,
     speakers.balh,
+    speakers.fleming,
+    speakers.bchan,
+    speakers.patychuk,
+    speakers.toner,
+    speakers.wolfe,
+    speakers.milovanovic,
+    speakers.forrest,
+    speakers.furquan,
+    speakers.appleton,
+    speakers.luzhang,
+    speakers.brocken,
+    speakers.rowe,
+    speakers.flodstrom,
+    speakers.gorgachev,
+    speakers.groll,
+    speakers.berznoger,
 ]
 
 const virtualNetworking2 = [
@@ -513,7 +629,18 @@ const virtualNetworking2 = [
     speakers.balh,
     speakers.zver,
     speakers.horobin,
-    speakers.goldstein
+    speakers.goldstein,
+    speakers.pitoglou,
+    speakers.bustamante,
+    speakers.london,
+    speakers.forti,
+    speakers.fleming,
+    speakers.bchan,
+    speakers.patychuk,
+    speakers.toner,
+    speakers.milovanovic,
+    speakers.furquan,
+    speakers.gorgachev,
 ]
 
 const eventMap = new Map();
@@ -621,18 +748,18 @@ function showPopup(popupInfo, isPanelist = true) {
 function generatePanelist(panelist) {
     const panelistDiv = `
 <div class="yes-popup-panelist">
-    <img src="${panelist.picture.length > 0 ? panelist.picture : "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a4120a7e782f0d23512ec_default.png"}"/>
-    <div class="yes-popup-panelist-info">
-        <h2>${panelist.company}</h2>
-        <h3>${panelist.name}</h3>
-        <p>${panelist.bio}</p>
-        <div class="yes-popup-panelist-links">
-            ${panelist.site ? `<a target="_blank" href="${panelist.site}" class="yes-popup-social-button"><img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606cd7065509511879deb533_site.svg"/></a>` : ""}
-            ${panelist.email ? `<a target="_blank" href="mailto:${panelist.email}" class="yes-popup-social-button"><img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606cd706dac82d1b34937120_email.svg"/></a>` : ""}
-            ${panelist.instagram ? `<a target="_blank" href="https://www.instagram.com/${panelist.instagram}" class="yes-popup-social-button"><img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606cd60a610ab13367d6871a_instagram.svg"/></a>` : ""}
-            ${panelist.linkedin ? `<a target="_blank" href="${panelist.linkedin}" class="yes-popup-social-button"><img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606cd5f7fa582966df1a5f1d_linkedin.svg"/></a>` : ""}
-        </div>
+<img src="${panelist.picture.length > 0 ? panelist.picture : "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a4120a7e782f0d23512ec_default.png"}"/>
+<div class="yes-popup-panelist-info">
+    <h2>${panelist.company}</h2>
+    <h3>${panelist.name}</h3>
+    <p>${panelist.bio}</p>
+    <div class="yes-popup-panelist-links">
+        ${panelist.site ? `<a target="_blank" href="${panelist.site}" class="yes-popup-social-button"><img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606cd7065509511879deb533_site.svg"/></a>` : ""}
+        ${panelist.email ? `<a target="_blank" href="mailto:${panelist.email}" class="yes-popup-social-button"><img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606cd706dac82d1b34937120_email.svg"/></a>` : ""}
+        ${panelist.instagram ? `<a target="_blank" href="https://www.instagram.com/${panelist.instagram}" class="yes-popup-social-button"><img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606cd60a610ab13367d6871a_instagram.svg"/></a>` : ""}
+        ${panelist.linkedin ? `<a target="_blank" href="${panelist.linkedin}" class="yes-popup-social-button"><img src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606cd5f7fa582966df1a5f1d_linkedin.svg"/></a>` : ""}
     </div>
+</div>
 </div>
 `;
 
@@ -641,11 +768,11 @@ function generatePanelist(panelist) {
 function generateGuest(guest) {
     const panelistDiv = `
 <div class="yes-popup-panelist">
-    <img src="${guest.picture.length > 0 ? guest.picture : "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a4120a7e782f0d23512ec_default.png"}"/>
-    <div class="yes-popup-panelist-info">
-        <h2>${guest.company}</h2>
-        <h3>${guest.name}</h3>
-    </div>
+<img src="${guest.picture.length > 0 ? guest.picture : "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a4120a7e782f0d23512ec_default.png"}"/>
+<div class="yes-popup-panelist-info">
+    <h2>${guest.company}</h2>
+    <h3>${guest.name}</h3>
+</div>
 </div>
 `;
 
