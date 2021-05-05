@@ -40,7 +40,7 @@
         width: 20.6%;
         height: 46.8%;
         background-image: url("https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6089f14fbb2572c67264e642_urban-fab-menu.png");
-        background-size: 100%;
+        background-size: 100% 445px;
         background-repeat: no-repeat;
     }
 
@@ -69,7 +69,6 @@
         margin: 0 auto;
         width: 100% !important;
         max-width: 546px !important;
-        height: 100vh !important;
         background-image: url("https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6089f14fbb2572c67264e642_urban-fab-menu.png");
         background-size: 100%;
         background-position: top;
@@ -83,7 +82,7 @@
         border: 0;
         padding-left: 64px;
         font-size: 42px;
-        line-height: 70px;
+        line-height: 60px;
         text-align: left;
         display: block;
         width: 100%;
@@ -103,10 +102,6 @@
     }
 
     @media screen and (max-width: 1200px) {
-        .video-list {
-            padding-top: 115px;
-        }
-
         .video-list>button {
             font-size: 20px;
         }
@@ -130,6 +125,7 @@
             right: 0;
             margin: 0 auto;
             background-image: url("https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/6089f1505b8967f955939347_urban-fab-mobile.png");
+            background-size: 100%;
         }
 
         .video-list>button {
@@ -163,7 +159,11 @@
 
         .mobile-video-list>a {
             font-size: 36px;
-            line-height: 60px;
+            line-height: 50px;
+        }
+
+        .mobile-video-list {
+            background-size: 100% 780px;
         }
     }
 
@@ -186,7 +186,7 @@
 
     @media screen and (max-width: 400px) {
         .mobile-video-list {
-            padding-top: 190px;
+            padding-top: 240px;
         }
 
         .mobile-video-list>a {
@@ -198,25 +198,20 @@
 
     @media screen and (max-width: 350px) {
         .mobile-video-list {
-            padding-top: 166px;
+            background-size: 100% auto;
+            padding-top: 160px;
         }
 
         .mobile-video-list>a {
             padding-left: 40px;
             font-size: 24px;
-            line-height: 40px;
+            line-height: 30px;
         }
     }
 
     @media screen and (max-width: 320px) {
         .mobile-video-list {
             padding-top: 155px;
-        }
-
-        .mobile-video-list>a {
-            padding-left: 40px;
-            font-size: 24px;
-            line-height: 40px;
         }
     }
 </style>
@@ -237,6 +232,7 @@
         <button onclick="switchToVideo(4)">Yihanna Sun</button>
         <button onclick="switchToVideo(5)">Celeste Lava</button>
         <button onclick="switchToVideo(6)">Marilou Vaillancourt</button>
+        <button onclick="switchToVideo(7)">Paul Lee</button>
 
         <div class="mobile-video-list">
             <a href="https://www.youtube.com/watch?v=eHc-vRO9nPM" target="_blank">Diane Lin</a>
@@ -246,6 +242,7 @@
             <a href="https://www.youtube.com/watch?v=0NAbF_D2GdY" target="_blank">Yihanna Sun</a>
             <a href="https://www.youtube.com/watch?v=6XdNaUOTSIU" target="_blank">Celeste Lava</a>
             <a href="https://www.youtube.com/watch?v=UUpfIkENk7I" target="_blank">Marilou Vaillancourt</a>
+            <a href="https://www.youtube.com/watch?v=5hwbFFocf68" target="_blank">Paul Lee</a>
         </div>
     </div>
     <script>
@@ -285,6 +282,10 @@
                 "name": "Marilou Vaillancourt",
                 "url": "https://www.youtube.com/embed/UUpfIkENk7I",
             },
+            "eight": {
+                "name": "Paul Lee",
+                "url": "https://www.youtube.com/embed/5hwbFFocf68",
+            },
         };
         let count = 0;
 
@@ -296,6 +297,7 @@
             videoLinks.five,
             videoLinks.six,
             videoLinks.seven,
+            videoLinks.eight,
         ]
 
         let roomContainer = document.getElementById("room-container");

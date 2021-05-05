@@ -156,7 +156,7 @@ const speakers = {
         "picture": "https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fdaf0a42efe12a820d_yabu.png"
     },
     "pushelberg": {
-        "name": "Glen Pushelberg (He/Him)",
+        "name": "Glenn Pushelberg (He/Him)",
         "company": "Yabu Pushelberg",
         "bio": "Yabu Pushelberg is a holistic design agency dedicated to crafting superlative experience and brand identity through integrated ideation, design and curation. Unprecedented thoughtfulness defining 40 years of work has asserted founders George Yabu and Glenn Pushelberg as celebrated leaders across design disciplines. Having evolved from a studio founded on interior design, Yabu Pushelberg's offices in Toronto and New York now specialize in sensibilities spanning architecture, landscapes, interiors, lighting, furniture, objects, textiles, branding and graphics.  This comprehensive approach coupled with the studio's narrative-based design trademark has ushered Yabu Pushelberg into a full-fledged creative agency redefining modern luxury around the world.",
         "instagram": "yabupushelberg",
