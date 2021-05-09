@@ -228,7 +228,7 @@
         padding: 60px;
         box-sizing: border-box;
         margin-top: 50px;
-        padding-bottom: 450px;
+        padding-bottom: 650px;
         overflow: hidden;
     }
 
@@ -572,7 +572,7 @@
 
     .yes-last-day {
         padding: 60px;
-        margin-top: -375px;
+        margin-top: -660px;
         position: relative;
         overflow: hidden;
     }
@@ -592,6 +592,7 @@
     .yes-sticker {
         position: absolute;
         right: -50px;
+        bottom: 80px;
     }
 
     .yes-popup {
@@ -783,6 +784,38 @@
         padding: 0 10px;
     }
 
+    .awards-headshots {
+        display: flex;
+        width: 70%;
+    }
+
+    .headshot {
+        width: 20%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .headshot>img {
+        width: 100%;
+    }
+
+
+    .headshot>h2 {
+        margin: 0;
+        margin-top: 10px;
+        line-height: 18px;
+        font-size: 18px;
+        font-family: var(--base-font-family);
+    }
+
+    .headshot>h3 {
+        margin: 0;
+        margin-top: 5px;
+        line-height: 14px;
+        font-size: 14px;
+        font-family: var(--base-font-family);
+    }
+
     @media screen and (max-width: 1920px) {
 
         .yes-blue-background,
@@ -797,8 +830,7 @@
 
         .yes-blue-background,
         .yes-orange-background,
-        .yes-yellow-background,
-        .yes-second-orange-background {
+        .yes-yellow-background {
             background-size: 1600px;
         }
 
@@ -838,6 +870,10 @@
             line-height: 60px;
         }
 
+        .yes-sticker {
+            bottom: 0;
+        }
+
         .yes-event-cards>.yes-event-card-container {
             width: calc(50% - 25px);
         }
@@ -859,8 +895,7 @@
 
         .yes-blue-background,
         .yes-orange-background,
-        .yes-yellow-background,
-        .yes-second-orange-background {
+        .yes-yellow-background {
             background-size: 1300px;
         }
 
@@ -883,6 +918,10 @@
             padding-top: 30px;
             padding-left: 30px;
             padding-right: 30px;
+        }
+
+        .awards-headshots {
+            width: 100%;
         }
 
         .yes-branding {
@@ -987,13 +1026,8 @@
         }
 
         .yes-blue-background,
-        .yes-yellow-background,
-        .yes-second-orange-background {
+        .yes-yellow-background {
             background-size: 1300px;
-        }
-
-        .yes-second-orange-background {
-            padding-bottom: 370px;
         }
 
         .yes-orange-background {
@@ -1011,10 +1045,6 @@
         .yes-yellow-background,
         .yes-second-orange-background {
             margin-top: 20px;
-        }
-
-        .yes-last-day {
-            margin-top: -325px;
         }
 
         .yes-title-header>.yes-header>h1 {
@@ -1078,6 +1108,18 @@
 
         .yes-time-blue {
             left: -250px;
+        }
+
+        .awards-headshots {
+            flex-wrap: wrap;
+        }
+
+        .headshot {
+            width: 33.333%;
+        }
+
+        .headshot>img {
+            max-width: 100px;
         }
 
         .yes-button-medium {
@@ -1187,7 +1229,7 @@
         .yes-button-medium {
             height: 40px;
             line-height: 40px;
-            font-size: 24px;
+            font-size: 20px;
         }
 
         .yes-day {
@@ -1905,9 +1947,39 @@
             <h3>Sunday, May 9th</h3>
             <h2>Award Ceremony</h2>
             <h4>1:00 - 2:00 PM EST
-                </br>
-                <a class="zoom-link zoom-link-black hidden" href="https://ryerson.zoom.us/j/96954108048"
-                    target="_blank">Join
+                <div class="awards-headshots">
+                    <div class="headshot">
+                        <img
+                            src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/606a30fdfb08b497247552f6_weinthal.png" />
+                        <h2>Lois Weinthal</h2>
+                        <h3>Ryerson University</h3>
+                    </div>
+                    <div class="headshot">
+                        <img
+                            src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/609768bc94751f285f8e045e_burdi.png" />
+                        <h2>Diego Burdi</h2>
+                        <h3>BURDIFILEK</h3>
+                    </div>
+                    <div class="headshot">
+                        <img
+                            src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/609768bc8f5a535a75e5d2a1_mou.png" />
+                        <h2>Joyce Mou</h2>
+                        <h3>Yabu Pushelberg</h3>
+                    </div>
+                    <div class="headshot">
+                        <img
+                            src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/609768bc9537f25655816d5b_gow.png" />
+                        <h2>Valerie Gow</h2>
+                        <h3>Gow Hastings Architects</h3>
+                    </div>
+                    <div class="headshot">
+                        <img
+                            src="https://uploads-ssl.webflow.com/5f494949a4c94cfd0ede984c/609768bcca7f001307f10e72_sun.png" />
+                        <h2>Stanley Sun</h2>
+                        <h3>Mason Studio</h3>
+                    </div>
+                </div>
+                <a class="zoom-link zoom-link-black" href="https://ryerson.zoom.us/j/96954108048" target="_blank">Join
                     Us</a>
             </h4>
 
